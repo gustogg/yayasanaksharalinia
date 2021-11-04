@@ -1,22 +1,14 @@
 {
-  "name": "yayasanaksharalinia",
+  "name": "akhsaralinia",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "coba.php",
   "scripts": {
     "build-css": "tailwindcss build src/styles.css -o public/styles.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gustogg/yayasanaksharalinia.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gustogg/yayasanaksharalinia/issues"
-  },
-  "homepage": "https://github.com/gustogg/yayasanaksharalinia#readme",
   "dependencies": {
     "tailwindcss": "^2.2.19"
   }
