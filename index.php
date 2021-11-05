@@ -78,22 +78,42 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Kerja Kami -->
-    <div class="p-6 bg-gray-50">
-        <div class="mb-4">
-            <p class="text-center text-base font-bold text-red-700">Kerja Kami</p>
+    <!-- Tempat kotak -->
+    <div class="bg-white p-3">
+        <!-- Kerja Kami -->
+        <div class="p-4 bg-white shadow-lg">
+            <div class="mb-4">
+                <p class="text-center text-base font-bold text-red-700">Kerja Kami</p>
+            </div>
+            <div>
+                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
+            </div>
+            <div class="mt-3">
+                <p class="text-sm text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="m-auto">
+                <button class="mx-auto block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                    Info Selengkapnya >
+                </button>
+            </div>
         </div>
-        <div>
-            <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
+        <!-- Coming Soon -->
+        <div class="mt-6 p-4 bg-white shadow-md">
+            <div class="">
+                <p class="text-center text-base font-bold text-red-700">COMING SOON</p>
+            </div>
         </div>
-        <div class="mt-3">
-            <p class="text-sm text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="bg-gray-100">
+        <div class="grid grid-cols-1 p-6">
+            <p class="text-red-600 text-center font-bold mb-4">Kerja Kami</p>
+            <div class="p-2 bg-white shadow-md rounded-md">
+                <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
+                <p class="mt-2 text-sm font-semibold">Rak Buku Gianyar</p>
+            </div>
+
         </div>
-        <div class="m-auto">
-            <button class="mx-auto block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                Info Selengkapnya >
-            </button>
-        </div>
+
     </div>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
