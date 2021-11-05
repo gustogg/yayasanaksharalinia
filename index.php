@@ -81,7 +81,7 @@
     <!-- Tempat kotak -->
     <div class="bg-white p-3">
         <!-- Kerja Kami -->
-        <div class="p-4 bg-white shadow-lg">
+        <div class="p-4 pt-6 bg-gray-50 shadow-lg">
             <div class="mb-4">
                 <p class="text-center text-base font-bold text-red-700">Kerja Kami</p>
             </div>
@@ -104,18 +104,21 @@
             </div>
         </div>
     </div>
+    <!-- Publikasi -->
     <div class="bg-gray-100">
         <div class="grid grid-cols-1 p-6">
-            <p class="text-red-600 text-center font-bold mb-4">Kerja Kami</p>
-            <div class="p-2 bg-white shadow-md rounded-md">
-                <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
-                <p class="mt-2 text-sm font-semibold">Rak Buku Gianyar</p>
-            </div>
+            <p class="text-red-600 text-center font-bold mb-4">Publikasi</p>
+            <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                <div class="p-3 bg-white shadow-md rounded-md">
+                    <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
+                    <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
+                </div>
+            </button>
 
         </div>
 
     </div>
-    <!-- Swiper JS -->
+    <!-- Swiper JS (Slider) -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
