@@ -79,9 +79,9 @@
     </div>
 
     <!-- Tempat kotak -->
-    <div class="bg-white p-3">
+    <div class="bg-white mt-8 p-3 md:px-28">
         <!-- Kerja Kami -->
-        <div class="p-4 pt-6 bg-gray-50 shadow-lg">
+        <div class="block md:hidden p-4 pt-6 bg-gray-50 filter shadow-lg">
             <div class="mb-4">
                 <p class="text-center text-base font-bold text-red-600">Kerja Kami</p>
             </div>
@@ -97,43 +97,72 @@
                 </button>
             </div>
         </div>
+        <div class="-mt-11 md:mt-0 mb-10 p-8 bg-gray-100 invisible md:visible grid grid-cols-3 filter shadow-lg ">
+            <div class="col-span-2 px-8 my-auto hidden md:block ">
+                <p class="text-lg font-bold text-red-600">Kerja Kami</p>
+                <p class="text-base text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button class="block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                    Info Selengkapnya >
+                </button>
+            </div>
+            <div class="col-span-1 hidden md:block ">
+                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
+            </div>
+        </div>
         <!-- Coming Soon -->
-        <div class="mt-6 p-4 bg-white shadow-md">
+        <div class="my-6 p-4 bg-gray-100 shadow-md">
             <div class="">
                 <p class="text-center text-base font-bold text-red-600 py-2">Informasi</p>
                 <p class="text-center text-sm font-semibold text-black py-12">To be announced</p>
             </div>
         </div>
     </div>
-    <!-- Publikasi -->
-    <div class="bg-gray-100">
-        <div class="grid grid-cols-1 p-6">
-            <p class="text-red-600 text-center font-bold mb-4">Publikasi</p>
-            <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                <div class="p-3 bg-white shadow-md rounded-md">
-                    <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
-                    <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
-                </div>
-            </button>
-
-        </div>
-
     </div>
-    <!-- Swiper JS (Slider) -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            cssMode: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-    </script>
-    <!--Footer -->
-    <?php include 'layout/footer.php'; ?>
+    <!-- Publikasi -->
+    <div class="bg-gray-100 px-16">
+        <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div class="grid col-span-1 p-6">
+                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
+                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
+                    </div>
+                </button>
+            </div>
+            <div class="grid col-span-1 p-6">
+                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
+                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
+                    </div>
+                </button>
+            </div>
+            <div class="grid col-span-1 p-6">
+                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
+                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+        <!-- Swiper JS (Slider) -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                cssMode: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+        <!--Footer -->
+        <?php include 'layout/footer.php'; ?>
