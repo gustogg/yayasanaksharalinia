@@ -83,7 +83,7 @@
         <!-- Kerja Kami -->
         <div class="p-4 pt-6 bg-gray-50 shadow-lg">
             <div class="mb-4">
-                <p class="text-center text-base font-bold text-red-700">Kerja Kami</p>
+                <p class="text-center text-base font-bold text-red-600">Kerja Kami</p>
             </div>
             <div>
                 <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
@@ -100,7 +100,8 @@
         <!-- Coming Soon -->
         <div class="mt-6 p-4 bg-white shadow-md">
             <div class="">
-                <p class="text-center text-base font-bold text-red-700">COMING SOON</p>
+                <p class="text-center text-base font-bold text-red-600 py-2">Informasi</p>
+                <p class="text-center text-sm font-semibold text-black py-12">To be announced</p>
             </div>
         </div>
     </div>
