@@ -14,23 +14,17 @@
         <div class="swiper-wrapper mt-10">
             <!-- Slider 1 -->
             <div class="swiper-slide">
-                <div class="object-cover h-85-screen" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
-                    <div class="pt-44 px-6 sm:pl-10  ">
-                        <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
-                            <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
-                                <p class="text-sm md:text-xl text-white font-bold"> SNM NJHEIO 9 LANUAK HSJO </p>
-                            </div>
-                        </div>
-                        <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
-                            <div class="py-3 px-3 md:py-4 md:px-4 bg-black bg-opacity-30 rounded-lg sm:mr-80">
-                                <p class="text-xs md:text-base text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
-                            </div>
-                        </div>
-                        <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                            Info Selengkapnya >
-                        </button>
-                    </div>
-                </div>
+            <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+            <div class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+              Welcome to my site!
+            </div>
+                <div class="object-cover object-center h-auto-screen">
+                <video autoplay loop muted="w-full">
+                <source src="/images/video.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+                </video>
+             </div>
+            </div>
             </div>
             <!-- Slider 2 -->
             <div class="swiper-slide">
