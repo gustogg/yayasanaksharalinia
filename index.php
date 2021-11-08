@@ -8,7 +8,7 @@
 </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper mt-10">
@@ -77,7 +77,7 @@
         <!-- Kerja Kami -->
         <div class="block md:hidden p-4 pt-6 bg-gray-50 filter shadow-lg">
             <div class="mb-4">
-                <p class="text-center text-base font-bold text-red-600">Kerja Kami</p>
+                <p class="text-center text-base font-bold text-red-600">Tentang Kami</p>
             </div>
             <div>
                 <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
