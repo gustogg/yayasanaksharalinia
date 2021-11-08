@@ -8,7 +8,7 @@
 </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper mt-10">
