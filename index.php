@@ -30,13 +30,14 @@
             <div class="swiper-slide">
                 <div class="">
                     <video autoplay loop muted class="object-cover h-85-screen w-full relative z-10">
-                        <source src="/images/video.mp4" type="video/mp4" class=""/>
+                        <source src="/images/video.mp4" type="video/mp4" class="" />
                         Your browser does not support the video tag.
                     </video>
                     <div class="-mt-98 px-6 sm:pl-10 relative z-30">
-                        <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
-                            <div class="py-3 px-10  md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
-                                <p class="text-sm md:text-xl text-white font-bold"> SELAMAT DATANG DI SITUS RESMI<br>YAYASAN AKSHARA LINIA INDONESIA </p>
+                        <div class="px-8 w-full">
+                            <div class="mx-98 py-8 bg-red-700 bg-opacity-80 rounded-md">
+                                <p class=" text-sm text-center md:text-2xl  text-white font-bold"> Selamat Datang di</p>
+                                <p class=" text-sm text-center md:text-2xl  text-white font-extrabold"> Yayasan Akhsara Linia Indonesia</p>
                             </div>
                         </div>
                     </div>
@@ -62,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Slider 3 -->
             <div class="swiper-slide">
                 <div class="object-cover h-85-screen" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
