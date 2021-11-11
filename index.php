@@ -13,18 +13,34 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper mt-10">
             <!-- Slider 1 -->
+            <!-- <div class="swiper-slide">
+                <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+                    <div class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+                        Welcome to my site!
+                    </div>
+                    <div class="object-cover object-center h-85-screen">
+                        <video autoplay loop muted="w-full">
+                            <source src="/images/video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Slider 2 -->
             <div class="swiper-slide">
-            <div class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
-            <div class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-              Welcome to my site!
-            </div>
-                <div class="object-cover object-center h-auto-screen">
-                <video autoplay loop muted="w-full">
-                <source src="/images/video.mp4" type="video/mp4"/>
-                Your browser does not support the video tag.
-                </video>
-             </div>
-            </div>
+                <div class="">
+                    <video autoplay loop muted class="object-cover h-85-screen w-full relative z-10">
+                        <source src="/images/video.mp4" type="video/mp4" class=""/>
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="-mt-98 px-6 sm:pl-10 relative z-30">
+                        <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
+                            <div class="py-3 px-10  md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
+                                <p class="text-sm md:text-xl text-white font-bold"> SELAMAT DATANG DI SITUS RESMI<br>YAYASAN AKSHARA LINIA INDONESIA </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Slider 2 -->
             <div class="swiper-slide">
@@ -46,6 +62,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- Slider 3 -->
             <div class="swiper-slide">
                 <div class="object-cover h-85-screen" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
@@ -142,21 +159,21 @@
             </div>
         </div>
     </div>
-        <!-- Swiper JS (Slider) -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                cssMode: true,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                },
-                mousewheel: true,
-                keyboard: true,
-            });
-        </script>
-        <!--Footer -->
-        <?php include 'layout/footer.php'; ?>
+    <!-- Swiper JS (Slider) -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+    <!--Footer -->
+    <?php include 'layout/footer.php'; ?>
