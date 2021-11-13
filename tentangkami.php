@@ -105,6 +105,31 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="text-center">
+    <div x-data="{animate: false}">
+      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+        STRUKTUR DAN PEMBINA YAYASAN<br>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
+      </button>
+      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-6 text-left pb-10 list-style-type: none bg-transparent text-black">
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-black text-center text-xl font-bold">Struktur Organisasi Yayasan</p>
+          <img class="pt-5 mx-auto text-justify w-10/12 pb-10" src="/images/Struktur.PNG">
+        </div>
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-black text-center text-xl font-bold">Bidang Kemanusiaan</p>
+          <p class="mx-auto text-justify pb-10">
+            a. Membantu bantuan kepada korban bencana alam <br>
+            b. Proses kegiatan penanggulangan bencana berbasis Masyarakat <br>
+            c. Memberikan perlindungan Konsumen<br>
+            d. Melestarikan Lingkungan Hidup<br>
+            e. Memberikan bantuan Bea Siswa<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
