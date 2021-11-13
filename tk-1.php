@@ -14,10 +14,15 @@
                 <div class="col-span-1">
                     <p class="text-lg">Before</p>
                     <div class="flex w-full h-64">
-                        <div class="w-1/2 border-2 border-red-600">
-                            <img class="object-cover" src="public/tk/tk-1-b.jpg">
+                        <div class="pr-4">
+                            <img class="w-1/2 pr-4 h-full filter brightness-75 blur-sm relative z-10" src="public/tk/tk-1-b.jpg">
+                            <div class="p-1 w-1/2 h-full">
+                                <img class="-mt-64 h-full pr-4 object-contain object-center relative z-20" src="public/tk/tk-1-b.jpg">
+                            </div>
                         </div>
-                        <img class="w-1/2 pr-4" src="public/tk/tk-1-b.jpg">
+                        <div>
+                            AAA
+                        </div>
                     </div>
                 </div>
 
