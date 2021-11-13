@@ -7,7 +7,7 @@
         <div class="">
             <img class="object-cover w-full h-96 relative z-10" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
             <div class="bg-black -mt-24 relative z-20 w-96 mb-4 mx-auto rounded-md bg-opacity-60">
-                <p class="p-3 font-semibold text-lg text-white text-center">Kerja Kami<br>Taman Kanak-Kanak</p>
+                <p class="p-3 font-semibold text-lg text-white text-center">Program Kerja Kami pada<br>Taman Kanak-Kanak</p>
             </div>
         </div>
         <div class="mx-40 pt-10 pb-8 px-4 bg-gray-100">
