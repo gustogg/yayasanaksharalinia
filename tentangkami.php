@@ -26,8 +26,8 @@
   <!-- Disini -->
   <div class="text-center">
     <div x-data="{animate: false}" class="">
-      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-xl mb-10">
-        Profil Perusahaan <br>
+      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+        PROFIL YAYASAN <br>
         <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
       </button>
       <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
@@ -47,53 +47,65 @@
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold">Visi</p>
-          <p class="pt-3 px-40 text-center pb-10">Melalui Yayasan Akshara Linia Indonesia, anak anak sekolah dasar berhak mendapatkan Pendidikan dan fasilitas yang layak</p>
+          <p class="pt-3 px-40 text-center pb-10 font-semibold">Melalui Yayasan Akshara Linia Indonesia, anak anak sekolah dasar berhak mendapatkan Pendidikan dan fasilitas yang layak</p>
 
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold">Misi</p>
-          <p class="pt-3 px-40 text-center pb-10">Sebagai garda terdepan untuk sosial dan kemanusiaan, dimana seribu anak yang mampu boleh mengecap Pendidikan, tetapi jangan sampai satu pun anak yang tidak mampu tidak bisa mengecap Pendidikan karena orang tuanya tidak mampu untuk membayar biaya Pendidikan karena anak yang tidak dapat makan dan anak yang tidak dapat Pendidikan sama sama bertentangan dengan nilai kemanusiaan</p>
+          <p class="pt-3 px-40 text-center pb-10 font-semibold">Sebagai garda terdepan untuk sosial dan kemanusiaan, dimana seribu anak yang mampu boleh mengecap Pendidikan, tetapi jangan sampai satu pun anak yang tidak mampu tidak bisa mengecap Pendidikan karena orang tuanya tidak mampu untuk membayar biaya Pendidikan karena anak yang tidak dapat makan dan anak yang tidak dapat Pendidikan sama sama bertentangan dengan nilai kemanusiaan</p>
 
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Our Motto</p>
+          <p class="text-red-500 text-center text-xl font-bold">Motto Kami</p>
           <p class="pt-3 px-40 text-center pb-10 font-bold font-style: italic">“WE WANT TO WORK WHILE RUNNING, WE WANT TO GIVE WHILE SMILING”</p>
 
         </div>
-        <div class="text-center">
-          <div x-data="{animate: false}">
-            <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-xl mb-10">
-              Our Strategy <br>
-              <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
-            </button>
-            <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent text-black">
-              1. Target program yang diterima dan diketahui oleh masyarakat Setempat, sekolah dan dinas Pendidikan<br>
-              2. Meninjau dan mengimplementasikan kebutuhan sekolah berdasarkan skala prioritas<br>
-              3. Menjalin dan membangun sumber daya lokal<br>
-              4. Mendukung kegiatan pemerintah di bidang Pendidikan<br>
-              5. Kerjasama dengan lembaga pengambil keputusan / stake holder terkait<br>
-            </div>
-          </div>
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-red-500 text-center text-xl font-bold">Strategi Kami</p>
+          <p class="pt-3 pl-85 text-justify pb-10 mr-5 font-semibold">
+            1. Target program yang diterima dan diketahui oleh masyarakat Setempat, sekolah dan dinas Pendidikan <br>
+            2. Meninjau dan mengimplementasikan kebutuhan sekolah berdasarkan skala prioritas<br>
+            3. Menjalin dan membangun sumber daya lokal<br>
+            4. Mendukung kegiatan pemerintah di bidang Pendidikan<br>
+            5. Kerjasama dengan lembaga pengambil keputusan / stake holder terkait<br></p>
         </div>
 
-        <div class="text-center">
-          <div x-data="{animate: false}">
-            <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-xl mb-10">
-              Kerja Kami <br>
-              <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
-            </button>
-            <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="px-40 mb-10 text-center bg-transparent text-black">
-              Menyediakan Fasilitas sekolah ( Sekolah Dasar dan TK) Merenovasi Sekolah serta fasilitas pendukung lainnya, Menyediakan APE dalam sebagai Alat Edukatif. Advokasi serta mendukung staff pengajar prihal digitalisasi edukasi termasuk Prokes di sekolah
-            </div>
-          </div>
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-red-500 text-center text-xl font-bold">Kerja Kami</p>
+          <p class="pt-3 px-40 text-center pb-10 font-semibold">
+          Menyediakan Fasilitas sekolah ( Sekolah Dasar dan TK) Merenovasi Sekolah serta fasilitas pendukung lainnya, Menyediakan APE dalam sebagai Alat Edukatif. Advokasi serta mendukung staff pengajar prihal digitalisasi edukasi termasuk Prokes di sekolah
+          </p>
         </div>
 
       </div>
     </div>
   </div>
+  <!-- Bidang -->
+  <div class="text-center">
+    <div x-data="{animate: false}">
+      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+        BIDANG ORGANISASI<br>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
+      </button>
+      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent text-black">
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-black text-center text-xl font-bold">Bidang Sosial</p>
+          <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
+            a. Lembaga Pendidikan Formal dan Non Formal<br>
+            b. Seminar dan Event<br></p>
+        </div>
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+          <p class="text-black text-center text-xl font-bold">Bidang Kemanusiaan</p>
+          <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
+            a. Membantu bantuan kepada korban bencana alam <br>
+            b. Proses kegiatan penanggulangan bencana berbasis Masyarakat <br>
+            c. Memberikan perlindungan Konsumen<br>
+            d. Melestarikan Lingkungan Hidup<br>
+            e. Memberikan bantuan Bea Siswa<br></p>
+        </div>
+      </div>
+    </div>
 
 
 
-
-
-  <?php include 'layout/footer.php'; ?>
+    <?php include 'layout/footer.php'; ?>
