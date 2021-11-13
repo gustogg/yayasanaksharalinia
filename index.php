@@ -26,7 +26,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- Slider 2 -->
+            <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
                     <video autoplay loop muted class="object-cover h-85-screen w-full relative z-10">
@@ -35,9 +35,9 @@
                     </video>
                     <div class="-mt-98 px-6 sm:pl-10 relative z-30">
                         <div class="px-8 w-full">
-                            <div class="mx-98 py-8 bg-red-700 bg-opacity-80 rounded-md">
-                                <p class=" text-sm text-center md:text-2xl  text-white font-bold"> Selamat Datang di</p>
-                                <p class=" text-sm text-center md:text-2xl  text-white font-extrabold"> Yayasan Akhsara Linia Indonesia</p>
+                            <div class="w-11/12 sm:w-7/12 md:w-7/12 lg:w-5/12 mx-auto py-8 bg-red-700 bg-opacity-80 rounded-md">
+                                <p class=" text-sm text-center md:text-xl lg:text-2xl  text-white font-bold"> Selamat Datang di</p>
+                                <p class=" text-sm text-center md:text-xl lg:text-2xl  text-white font-extrabold"> Yayasan Akhsara Linia Indonesia</p>
                             </div>
                         </div>
                     </div>
