@@ -92,7 +92,7 @@
 
     <!-- Tempat kotak -->
     <div class="bg-white mt-8 p-3 md:px-28">
-        <!-- Kerja Kami -->
+        <!-- Tentang Kami -->
         <div class="block md:hidden p-4 pt-6 bg-gray-50 filter shadow-lg">
             <div class="mb-4">
                 <p class="text-center text-base font-bold text-red-600">Tentang Kami</p>
@@ -111,14 +111,16 @@
         </div>
         <div class="-mt-11 md:mt-0 mb-10 p-8 bg-gray-100 invisible md:visible grid grid-cols-3 filter shadow-lg ">
             <div class="col-span-2 px-8 my-auto hidden md:block ">
-                <p class="text-lg font-bold text-red-600">Kerja Kami</p>
-                <p class="text-base text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <button class="block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                    Info Selengkapnya >
-                </button>
+                <p class="text-lg mb-2 font-bold text-red-600">Tentang Kami</p>
+                <p class="text-base text-justify"><strong>Yayasan Akshara Linia Indonesia</strong> adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Mentri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021.</p>
+                <a href="tentangkami.php">
+                    <button class="block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                        Info Selengkapnya >
+                    </button>
+                </a>
             </div>
             <div class="col-span-1 hidden md:block ">
-                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
+                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="/images/tentangkami.jpg" alt="image" />
             </div>
         </div>
         <!-- Coming Soon -->
