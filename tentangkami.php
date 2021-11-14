@@ -19,16 +19,16 @@
   </div>
   <div class="pt-24">
     <p class="text-center text-3xl font-bold mb-6">Yayasan Akhsara Linia Indonesia</p>
-    <p class="text-center font-normal mb-10 px-56 pb-24">Yayasan Akshara Linia Indonesia adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Mentri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021
+    <p class="text-center font-normal mb-10 px-56 pb-24">Yayasan Akshara Linia Indonesia adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Menteri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021
     </p>
   </div>
 
   <!-- Disini -->
-  <div class="text-center">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-10">
     <div x-data="{animate: false}" class="">
-      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+      <button @click="animate = (animate) ? false : true" class=" bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-5 ml-4 text-2xl mb-10">
         PROFIL YAYASAN <br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
       </button>
       <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
         <!-- Hidden Start -->
@@ -46,22 +46,22 @@
           </div>
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Visi</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Visi</p>
           <p class="pt-3 px-40 text-center pb-10 font-semibold">Melalui Yayasan Akshara Linia Indonesia, anak anak sekolah dasar berhak mendapatkan Pendidikan dan fasilitas yang layak</p>
 
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Misi</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Misi</p>
           <p class="pt-3 px-40 text-center pb-10 font-semibold">Sebagai garda terdepan untuk sosial dan kemanusiaan, dimana seribu anak yang mampu boleh mengecap Pendidikan, tetapi jangan sampai satu pun anak yang tidak mampu tidak bisa mengecap Pendidikan karena orang tuanya tidak mampu untuk membayar biaya Pendidikan karena anak yang tidak dapat makan dan anak yang tidak dapat Pendidikan sama sama bertentangan dengan nilai kemanusiaan</p>
 
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Motto Kami</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Motto Kami</p>
           <p class="pt-3 px-40 text-center pb-10 font-bold font-style: italic">“WE WANT TO WORK WHILE RUNNING, WE WANT TO GIVE WHILE SMILING”</p>
 
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Strategi Kami</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Strategi Kami</p>
           <p class="pt-3 pl-85 text-justify pb-10 mr-5 font-semibold">
             1. Target program yang diterima dan diketahui oleh masyarakat Setempat, sekolah dan dinas Pendidikan <br>
             2. Meninjau dan mengimplementasikan kebutuhan sekolah berdasarkan skala prioritas<br>
@@ -69,33 +69,25 @@
             4. Mendukung kegiatan pemerintah di bidang Pendidikan<br>
             5. Kerjasama dengan lembaga pengambil keputusan / stake holder terkait<br></p>
         </div>
-
-        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-red-500 text-center text-xl font-bold">Kerja Kami</p>
-          <p class="pt-3 px-40 text-center pb-10 font-semibold">
-          Menyediakan Fasilitas sekolah ( Sekolah Dasar dan TK) Merenovasi Sekolah serta fasilitas pendukung lainnya, Menyediakan APE dalam sebagai Alat Edukatif. Advokasi serta mendukung staff pengajar prihal digitalisasi edukasi termasuk Prokes di sekolah
-          </p>
-        </div>
-
       </div>
     </div>
   </div>
   <!-- Bidang -->
-  <div class="text-center">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
     <div x-data="{animate: false}">
       <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
         BIDANG ORGANISASI<br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
       </button>
-      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent text-black">
+      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-black text-center text-xl font-bold">Bidang Sosial</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">BIDANG Sosial</p>
           <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
             a. Lembaga Pendidikan Formal dan Non Formal<br>
             b. Seminar dan Event<br></p>
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-black text-center text-xl font-bold">Bidang Kemanusiaan</p>
+          <p class="text-red-500 text-center text-xl font-bold pt-7">BIDANG Kemanusiaan</p>
           <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
             a. Membantu bantuan kepada korban bencana alam <br>
             b. Proses kegiatan penanggulangan bencana berbasis Masyarakat <br>
@@ -107,30 +99,55 @@
     </div>
   </div>
 
-  <div class="text-center">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
     <div x-data="{animate: false}">
       <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
         STRUKTUR DAN PEMBINA YAYASAN<br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800">+</p>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
       </button>
       <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-6 text-left pb-10 list-style-type: none bg-transparent text-black">
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-black text-center text-xl font-bold">Struktur Organisasi Yayasan</p>
-          <img class="pt-5 mx-auto text-justify w-10/12 pb-10" src="/images/Struktur.PNG">
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Struktur Organisasi Yayasan</p>
+          <img class="pt-5 mx-auto text-justify w-10/12 pb-10 bg-white rounded-sm shadow-sm" src="/images/Struktur.PNG">
         </div>
-        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
-          <p class="text-black text-center text-xl font-bold">Bidang Kemanusiaan</p>
-          <p class="mx-auto text-justify pb-10">
-            a. Membantu bantuan kepada korban bencana alam <br>
-            b. Proses kegiatan penanggulangan bencana berbasis Masyarakat <br>
-            c. Memberikan perlindungan Konsumen<br>
-            d. Melestarikan Lingkungan Hidup<br>
-            e. Memberikan bantuan Bea Siswa<br></p>
+        <!-- Pembina Yayasan -->
+        <div class="mt-10 mb-10 bg-white ">
+          <p class="text-red-500 text-center text-xl font-bold pt-7">Pembina Yayasan</p>
+
+          <div class="flex justify-center items-center">
+            <div class="px-10 mx- mt-10 mb-10 bg-white shadow-md rounded-md">
+              <img class="pt-5 mx-auto text-justify pb-10 bg-white rounded-sm shadow-sm h-85" src="/images/Ketua.png">
+              <p class="mx-auto w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
+                <strong>Ketua Yayasan</strong><br>
+                R.MANMAGILAN S.E.,M.Si.
+              </p>
+            </div>
+            <div class="px-10 mt-10 mb-10 bg-white shadow-md rounded-md">
+              <img class="pl-3 pt-5 text-justify pb-10 bg-white rounded-sm shadow-sm h-85 " src="/images/Penasihat.jpg">
+              <p class="w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
+                <strong>Penasihat</strong><br>
+                SRI DHAREN S.H.,M.B.A.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
+    <div x-data="{animate: false}">
+      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+        Kerja Kami<br>
+        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
+      </button>
+      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
+        <div class="mt-10 mb-10 bg-white shadow-md rounded-md ">
+          <p class="-mt-10 text-black text-center text-xl font-semibold w-full mx-auto px-28 py-10">Yayasan Akshara Linia Indonesia telah melaksanakan, mendukung, dan menyediakan fasilitas di Sekolah Dasar dan peralatan serta merenovasi TK dengan bersinergi dengan stake holder di masyarakat.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-    <?php include 'layout/footer.php'; ?>
+  <?php include 'layout/footer.php'; ?>
