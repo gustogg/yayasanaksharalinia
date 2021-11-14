@@ -133,9 +133,9 @@
     </div>
     </div>
     <!-- Publikasi -->
-    <div class="bg-gray-100 px-16">
+    <div class="bg-gray-100 px-8 lg:px-16">
         <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
             <div class="grid col-span-1 p-6">
                 <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                     <div class="col-span-1 p-3 bg-white shadow-md rounded-md">

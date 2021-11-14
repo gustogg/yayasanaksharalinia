@@ -24,14 +24,21 @@
         </div>
         <div class="lg:col-span-1 hidden lg:block ">
             <p class="text-sm sm:text-xl text-left font-semibold text-white">Our Location</p>
-            <iframe class="my-2 rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7242856142902!2d115.1370701147062!3d-8.811952192566169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd245298587f147%3A0xcde6230a589ca390!2sYayasan%20Dharma%20Satya%20Esa%20Sempurna!5e0!3m2!1sid!2sid!4v1636172534342!5m2!1sid!2sid" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="h-40 w-72">
+                <a href="https://goo.gl/maps/tD7NcFRXL6bnsccJ7" target="_blank" rel="noopener noreferrer">
+                    <img class="my-2 rounded-md  w-full h-full object-cover" src="public/gmaps-lg.png">
+                </a>
+            </div>
+
         </div>
     </div>
     <div class="grid grid-cols-3 gap-1 sm:gap-4 object-top px-8 sm:px-32 lg:ml-0 pb-4 -mt-3 sm:-mb-2 sm:-mt-5 sm:pb-8 w-screen -ml-8 md:ml-0">
-    <div class=" col-start-2 col-span-2 visible lg:hidden">
-        <p class="text-sm sm:text-xl font-semibold text-white">Our Location</p>
-        <iframe class="rounded-md sm:w-96 sm:h-44" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7242856142902!2d115.1370701147062!3d-8.811952192566169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd245298587f147%3A0xcde6230a589ca390!2sYayasan%20Dharma%20Satya%20Esa%20Sempurna!5e0!3m2!1sid!2sid!4v1636172534342!5m2!1sid!2sid" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+        <div class=" col-start-2 col-span-2 visible lg:hidden">
+            <p class="text-sm sm:text-xl font-semibold text-white">Our Location</p>
+            <a href="https://goo.gl/maps/tD7NcFRXL6bnsccJ7" target="_blank" rel="noopener noreferrer">
+                <img class="rounded-md w-60 h-24 sm:w-96 sm:h-44 object-cover" src="public/gmaps-lg.png">
+            </a>
+        </div>
     </div>
     <div class="text-center px-auto py-2 sm:py-3 bg-red-900 text-gray-300 font-bold text-sm sm:text-xs">
         <p>Copyright &copy; Yayasan Akshara Linia Indonesia 2021</p>
