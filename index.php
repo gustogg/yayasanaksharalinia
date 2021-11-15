@@ -29,11 +29,11 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay="autoplay" loop=""  id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
+                    <video autoplay="autoplay" loop="" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
                         <source src="/images/video.mp4" type="video/mp4" class="" />
                         Your browser does not support the video tag.
                     </video>
-                    <div class="-mt-98 px-6 sm:pl-10 relative z-30">
+                    <div class="-mt-94 px-6 sm:pl-10 relative z-30">
                         <div class="px-8 w-full">
                             <div class="w-11/12 sm:w-7/12 md:w-7/12 lg:w-5/12 mx-auto py-8 bg-red-700 bg-opacity-80 rounded-md">
                                 <p class=" text-sm text-center md:text-xl lg:text-2xl  text-white font-bold"> Selamat Datang di</p>
@@ -47,7 +47,7 @@
             <div class="swiper-slide">
                 <div class="h-99" >
                 <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-1-st2.jpg">
-                    <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
+                    <div class="relative z-20 -mt-94 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
                                 <p class="text-sm md:text-xl text-white font-bold"> SD Negeri 7 Manukaya, Kabupaten Gianyar </p>
@@ -71,7 +71,7 @@
             <div class="swiper-slide">
                 <div class="h-99" >
                 <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-2-st1.jpg">
-                    <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
+                    <div class="relative z-20 -mt-94 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
                                 <p class="text-sm md:text-xl text-white font-bold">SD Negeri 4 Sukawana, Kintamani, Kabupaten Bangli </p>
