@@ -3,8 +3,8 @@
         <div class="col-span-1">
             <img src="images/logo.png" class="h-16 sm:h-24 md:h-40 w-auto mx-auto sm:mx-0">
         </div>
-        <div class="col-span-1 ">
-            <a class="text-sm sm:text-xl font-semibold text-white">Our Page List</a>
+        <div class="col-span-1 flex flex-col ">
+            <a class="text-sm sm:text-xl font-semibold text-white w-full">Our Page List</a>
             <a href="/index.php" class="text-xs sm:text-base my-2 text-gray-300">&#8729; Home</a>
             <a href="/tentangkami.php"  class="text-xs sm:text-base my-2 text-gray-300">&#8729; Tentang Kami</a>
             <a href="/kerjakami-tk.php"  class="text-xs sm:text-base my-2 text-gray-300">&#8729; Kerja Kami - TK</a>

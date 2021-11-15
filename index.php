@@ -131,35 +131,39 @@
             </div>
         </div>
     </div>
-    </div>
     <!-- Publikasi -->
-    <div class="bg-gray-100 px-8 lg:px-16">
+    <div class="bg-gray-100 px-8 lg:px-16 pb-8">
         <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <!-- Publikasi Div -->
             <div class="grid col-span-1 p-6">
-                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
-                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
-                    </div>
-                </button>
+                <a href="#">
+                    <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                        <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                            <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb1.jpg">
+                            <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Kepala Sekolah SD Negeri 7 Gianyar, Bpk.I Gusti Ngurah Mideh S. Pd sedang berbincang kepada Penasihat Akshara Linia Indonesia, “ Sri Dharen S.H., M.B.A,” mengucapkan terima kasih telah memperhatikan kebutuhan sekolah kami di Manukaya, Kabupaten Gianyar.</p>
+                        </div>
+                    </button>
+                </a>
             </div>
+            <!-- Publikasi Div -->
             <div class="grid col-span-1 p-6">
-                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
-                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
-                    </div>
-                </button>
+                <a href="#">
+                    <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                        <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                            <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
+                            <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Photo Bersama para guru di sekolah SD Negeri 7 Manukaya Gianyar, didampingi oleh Pak I Ketut Arinata Yasa, Tampak Siring.</p>
+                        </div>
+                    </button>
+                </a>
             </div>
-            <div class="grid col-span-1 p-6">
-                <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                    <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                        <img class="object-cover w-screen h-64" src="public/sd/sdn7gianyar_rakbuku.jpg">
-                        <p class="pl-2 mt-2 text-sm text-left font-semibold">Rak Buku Gianyar</p>
-                    </div>
+        </div>
+        <div class="w-full ">
+            <a href="/publikasi.php">
+                <button class="block mx-auto mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                    Info Selengkapnya >
                 </button>
-            </div>
+            </a>
         </div>
     </div>
     <!-- Swiper JS (Slider) -->
