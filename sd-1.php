@@ -5,7 +5,7 @@
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16 w-full md:w-11/12 lg:w-4/5 mx-auto">
         <div class="">
-            <img class="object-cover h-96 w-full filter brightness-75 relative z-10" src="public/tk/tk-1-b.jpg" alt="image" />
+            <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/sd/sd-1-st2.jpg" alt="image" />
         </div>
         <div class="pt-10 pb-8 px-8 bg-gray-100">
             <p class="text-lg md:text-2xl text-center font-bold mb-8">SD Negeri 7 Manukaya, Kabupaten Gianyar</p>
