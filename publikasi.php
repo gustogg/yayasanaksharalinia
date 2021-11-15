@@ -78,7 +78,7 @@
                             </div>
                         </button>
                     </a>
-                </div </div>
+                </div>
             </div>
         </div>
 
