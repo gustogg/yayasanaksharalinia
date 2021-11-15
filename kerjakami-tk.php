@@ -1,7 +1,8 @@
 <?php include 'layout/header.php'; ?>
+<title>Kerja Kami - SD</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16">
         <div class="">

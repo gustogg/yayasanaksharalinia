@@ -1,7 +1,7 @@
 <?php include 'layout/header.php'; ?>
 </head>
 
-<body class="bg-gray-200">
+<body class="bg-gray-200 overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16 w-full md:w-11/12 lg:w-4/5 mx-auto">
         <div class="">

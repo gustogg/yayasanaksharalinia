@@ -1,11 +1,12 @@
 <?php include 'layout/header.php'; ?>
+<title>Kerja Kami - SD</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16">
         <div class="">
-            <img class="object-cover w-full h-96 relative z-10 object-top" src="public/sd/sd-2-a.jpg" alt="image" />
+            <img class="object-cover w-full h-96 relative z-10 object-top" src="public/sd/sd-1-st2.jpg" alt="image" />
             <div class="bg-black -mt-24 relative z-20 w-60 md:w-96 mb-4 mx-auto rounded-md bg-opacity-60">
                 <p class="p-3 font-semibold text-base md:text-lg text-white text-center">Program Kerja Kami pada<br>Sekolah Dasar</p>
             </div>
