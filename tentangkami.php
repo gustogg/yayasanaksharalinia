@@ -25,16 +25,15 @@
 
   <!-- Disini -->
   <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-10">
-    <div x-data="{animate: false}" class="">
-      <button @click="animate = (animate) ? false : true" class=" bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-5 ml-4 text-2xl mb-10">
+    <div>
+      <div class=" bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-5 ml-4 text-2xl mb-10">
         PROFIL YAYASAN <br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
-      </button>
-      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
+</div>
+      <div class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
         <!-- Hidden Start -->
         <img class="mr-10 pt-5 bg-white shadow-md rounded-md w-48 pt-8" src="/images/logo.png" alt="YALI logo">
         <div class="-mt-60 text-left pl-52">
-          <div x-data="{animate: false}">
+          <div>
             <div class="bg-red-500 text-white font-bold pl-2 py-2 pr-110 mt-4 ml-10 text-2xl mb-10">
               Filosofi Logo
             </div>
@@ -60,9 +59,9 @@
           <p class="pt-3 px-40 text-center pb-10 font-bold font-style: italic">“WE WANT TO WORK WHILE RUNNING, WE WANT TO GIVE WHILE SMILING”</p>
 
         </div>
-        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+        <div class="mt-10 mb-4 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold pt-7">Strategi Kami</p>
-          <p class="pt-3 pl-85 text-justify pb-10 mr-5 font-semibold">
+          <p class="pt-3 pl-85 text-justify pb-5 mr-5 font-semibold">
             1. Target program yang diterima dan diketahui oleh masyarakat Setempat, sekolah dan dinas Pendidikan <br>
             2. Meninjau dan mengimplementasikan kebutuhan sekolah berdasarkan skala prioritas<br>
             3. Menjalin dan membangun sumber daya lokal<br>
@@ -73,13 +72,12 @@
     </div>
   </div>
   <!-- Bidang -->
-  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
-    <div x-data="{animate: false}">
-      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div>
+      <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
         BIDANG ORGANISASI<br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
-      </button>
-      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
+      </div>
+      <div class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold pt-7">BIDANG Sosial</p>
           <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
@@ -88,7 +86,7 @@
         </div>
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold pt-7">BIDANG Kemanusiaan</p>
-          <p class="pt-3 pl-36 mx-auto text-justify pb-10 mr-5">
+          <p class="pt-3 pl-36 mx-auto text-justify pb-5 mr-5">
             a. Membantu bantuan kepada korban bencana alam <br>
             b. Proses kegiatan penanggulangan bencana berbasis Masyarakat <br>
             c. Memberikan perlindungan Konsumen<br>
@@ -99,14 +97,13 @@
     </div>
   </div>
 
-  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
-    <div x-data="{animate: false}">
-      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 pt-5">
+    <div>
+      <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl pb-10">
         STRUKTUR DAN PEMBINA YAYASAN<br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
-      </button>
-      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-6 text-left pb-10 list-style-type: none bg-transparent text-black">
-        <div class="mt-10 mb-10 bg-white shadow-md rounded-md">
+       </div>
+      <div class="mb-10 pt-3 px-6 text-left pb-10 list-style-type: none bg-transparent text-black">
+        <div class="mb-10 bg-white shadow-md rounded-md">
           <p class="text-red-500 text-center text-xl font-bold pt-7">Struktur Organisasi Yayasan</p>
           <img class="pt-5 mx-auto text-justify w-10/12 pb-10 bg-white rounded-sm shadow-sm" src="/images/Struktur.PNG">
         </div>
@@ -135,13 +132,12 @@
     </div>
   </div>
 
-  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-10">
-    <div x-data="{animate: false}">
-      <button @click="animate = (animate) ? false : true" class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
+  <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div>
+      <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
         Kerja Kami<br>
-        <p class="text-white text-sm font-thin bg-red-500 rounded-xl hover:bg-red-800 w-20 mx-auto mt-4">+</p>
-      </button>
-      <div x-show="animate" x-transition:enter="transition ease-out duration-1000" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-1000" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
+      </div>
+      <div class="mb-10 pt-3 px-85 text-left pb-10 list-style-type: none bg-transparent">
         <div class="mt-10 mb-10 bg-white shadow-md rounded-md ">
           <p class="-mt-10 text-black text-center text-xl font-semibold w-full mx-auto px-28 py-10">Yayasan Akshara Linia Indonesia telah melaksanakan, mendukung, dan menyediakan fasilitas di Sekolah Dasar dan peralatan serta merenovasi TK dengan bersinergi dengan stake holder di masyarakat.</p>
           </p>
