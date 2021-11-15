@@ -41,7 +41,7 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="relative z-20 -mt-94 px-6 sm:pl-10  ">
+                    <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 pb-2">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-red-600 bg-opacity-80 rounded-lg sm:mr-80">
                                 <p class="text-sm md:text-xl text-white font-bold"> Selamat Datang di <strong>Yayasan Akshara Linia Indonesia </strong></p>
@@ -49,7 +49,7 @@
                         </div>
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-2 px-3 text-left md:py-3 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-98">
-                                <p class="text-sm md:text-lg text-white font-medium"> SD Negeri 7 Manukaya, Kabupaten Gianyar </p>
+                                <p class="text-sm md:text-lg text-white font-normal"> Awal pembelajaran tatap muka pada minggu pertama bulan November, murid-murid SD Negeri 4 Sukawana merasa senang mendapatkan fasilitas meja belajar dan kursi yang baru dari Yayasan Akshara Linia Indonesia </p>
                             </div>
                         </div>
                         <!-- <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
