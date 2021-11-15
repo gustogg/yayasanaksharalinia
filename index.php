@@ -29,7 +29,7 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay loop muted class="object-cover h-85-screen w-full relative z-10">
+                    <video autoplay="autoplay" loop=""  id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
                         <source src="/images/video.mp4" type="video/mp4" class="" />
                         Your browser does not support the video tag.
                     </video>
@@ -45,42 +45,48 @@
             </div>
             <!-- Slider 2 -->
             <div class="swiper-slide">
-                <div class="object-cover h-85-screen" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
-                    <div class="pt-44 px-6 sm:pl-10  ">
+                <div class="h-99" >
+                <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-1-st2.jpg">
+                    <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
-                                <p class="text-sm md:text-xl text-white font-bold"> SNM NJHEIO 9 LANUAK HSJO </p>
+                                <p class="text-sm md:text-xl text-white font-bold"> SD Negeri 7 Manukaya, Kabupaten Gianyar </p>
                             </div>
                         </div>
-                        <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
+                        <!-- <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
                             <div class="py-3 px-3 md:py-4 md:px-4 bg-black bg-opacity-30 rounded-lg sm:mr-80">
                                 <p class="text-xs md:text-base text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
                             </div>
-                        </div>
-                        <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                            Info Selengkapnya >
-                        </button>
+                        </div> -->
+                        <a href="/sd-1.php">
+                            <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                                Info Selengkapnya >
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <!-- Slider 3 -->
             <div class="swiper-slide">
-                <div class="object-cover h-85-screen" style="background-image: url('https://source.unsplash.com/user/erondu/3000x900');">
-                    <div class="pt-44 px-6 sm:pl-10  ">
+                <div class="h-99" >
+                <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-2-st1.jpg">
+                    <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
-                                <p class="text-sm md:text-xl text-white font-bold"> SNM NJHEIO 9 LANUAK HSJO </p>
+                                <p class="text-sm md:text-xl text-white font-bold">SD Negeri 4 Sukawana, Kintamani, Kabupaten Bangli </p>
                             </div>
                         </div>
-                        <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
+                        <!-- <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
                             <div class="py-3 px-3 md:py-4 md:px-4 bg-black bg-opacity-30 rounded-lg sm:mr-80">
                                 <p class="text-xs md:text-base text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
                             </div>
-                        </div>
-                        <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                            Info Selengkapnya >
-                        </button>
+                        </div> -->
+                        <a href="/sd-1.php">
+                            <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                                Info Selengkapnya >
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -98,10 +104,10 @@
                 <p class="text-center text-base font-bold text-red-600">Tentang Kami</p>
             </div>
             <div>
-                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="https://source.unsplash.com/collection/190728/3000x900" alt="image" />
+                <img class="object-cover w-full p-2 h-60 border-2 border-red-500 rounded-md" src="/images/tentangkami.jpg" alt="image" />
             </div>
             <div class="mt-3">
-                <p class="text-sm text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="text-sm text-justify"><strong>Yayasan Akshara Linia Indonesia</strong> adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Mentri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021.</p>
             </div>
             <div class="m-auto">
                 <button class="mx-auto block mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
@@ -158,7 +164,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full ">
+        <div class=" ">
             <a href="/publikasi.php">
                 <button class="block mx-auto mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
                     Info Selengkapnya >
@@ -166,6 +172,7 @@
             </a>
         </div>
     </div>
+
     <!-- Swiper JS (Slider) -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

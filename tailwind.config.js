@@ -65,6 +65,7 @@ module.exports = {
       96: '24rem',
       85: '22rem',
       98: '26rem',
+      99: '40rem',
     },
     animation: {
       none: 'none',
