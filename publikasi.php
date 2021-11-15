@@ -1,4 +1,5 @@
 <?php include 'layout/header.php'; ?>
+<link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
 <title>Publikasi</title>
 </head>
 
@@ -69,7 +70,7 @@
                     </a>
                 </div>
                 <!-- Publikasi Div -->
-                <div class="grid col-span-1 p-6">
+                <!-- <div class="grid col-span-1 p-6">
                     <a href="#">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
@@ -78,10 +79,23 @@
                             </div>
                         </button>
                     </a>
+                </div> -->
+                <div class="grid col-span-1 p-6">
+                    <a>
+                        <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
+                            <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                                <video id="my-video" class="video-js w-full " controls preload="auto" width="507" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                                    <source src="images/video.mp4" class="object-cover " type="video/mp4" />
+                                </video>
+                                <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Awal pembelajaran tatap muka pada minggu pertama bulan November, murid-murid SD Negeri 4 Sukawana merasa senang mendapatkan fasilitas meja belajar dan kursi yang baru dari Yayasan Akshara Linia Indonesia.</p>
+                            </div>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
-
-        <!--Footer -->
-        <?php include 'layout/footer.php'; ?>
+    </div>
+    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+    <!--Footer -->
+    <?php include 'layout/footer.php'; ?>
