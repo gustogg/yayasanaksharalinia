@@ -4,10 +4,14 @@
             <img src="images/logo.png" class="h-16 sm:h-24 md:h-40 w-auto mx-auto sm:mx-0">
         </div>
         <div class="col-span-1 ">
-            <p class="text-sm sm:text-xl font-semibold text-white">Our Page List</p>
-            <p class="text-xs sm:text-base my-2 text-gray-300">&#8729; Home</p>
-            <p class="text-xs sm:text-base my-2 text-gray-300">&#8729; Product Retail</p>
-            <p class="text-xs sm:text-base my-2 text-gray-300">&#8729; About Us</p>
+            <a class="text-sm sm:text-xl font-semibold text-white">Our Page List</a>
+            <a href="/index.php" class="text-xs sm:text-base my-2 text-gray-300">&#8729; Home</a>
+            <a href="/tentangkami.php"  class="text-xs sm:text-base my-2 text-gray-300">&#8729; Tentang Kami</a>
+            <a href="/kerjakami-tk.php"  class="text-xs sm:text-base my-2 text-gray-300">&#8729; Kerja Kami - TK</a>
+            <a href="/kerjakami-sd.php"  class="text-xs sm:text-base my-2 text-gray-300">&#8729; Kerja Kami - SD</a>
+            <a href="/publikasi.php" class="text-xs sm:text-base my-2 text-gray-300">&#8729; Publikasi</a>
+            <a href="#" class="text-xs sm:text-base my-2 text-gray-300">&#8729; Informasi</a>
+            
         </div>
         <div class="col-span-1">
             <p class="text-sm sm:text-xl font-semibold text-white">Contact Us</p>
