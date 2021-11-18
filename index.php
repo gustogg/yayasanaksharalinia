@@ -42,34 +42,36 @@
                         </div>
                     </div> -->
                     <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
-                        <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 pb-2">
-                            <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-red-600 bg-opacity-80 rounded-lg sm:mr-80">
+                        <div class="px-8 w-max pb-2 mx-auto">
+                            <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg w-max justify-center">
                                 <p class="text-sm md:text-xl text-white font-bold"> Selamat Datang di <strong>Yayasan Akshara Linia Indonesia </strong></p>
                             </div>
                         </div>
-                        <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
+                        <!-- <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-2 px-3 text-left md:py-3 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-98">
                                 <p class="text-sm md:text-lg text-white font-normal"> Awal pembelajaran tatap muka pada minggu pertama bulan November, murid-murid SD Negeri 4 Sukawana merasa senang mendapatkan fasilitas meja belajar dan kursi yang baru dari Yayasan Akshara Linia Indonesia </p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- <div class="mt-2 px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72 text-justify">
                             <div class="py-3 px-3 md:py-4 md:px-4 bg-black bg-opacity-30 rounded-lg sm:mr-80">
                                 <p class="text-xs md:text-base text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
                             </div>
                         </div> -->
-                        <a href="/publikasi.php">
-                            <button class="mx-8 mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
-                                Info Selengkapnya >
-                            </button>
-                        </a>
+                        <div class="w-max mx-auto">
+                            <a href="/publikasi.php" class="">
+                                <button class="mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
+                                    Info Selengkapnya >
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Slider 2 -->
             <div class="swiper-slide">
-                <div class="h-99" >
-                <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-1-st2.jpg">
-                    <div class="relative z-20 -mt-94 px-6 sm:pl-10  ">
+                <div class="h-99">
+                    <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-1-st2.jpg">
+                    <div class="relative z-20 -mt-44 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
                                 <p class="text-sm md:text-xl text-white font-bold"> SD Negeri 7 Manukaya, Kabupaten Gianyar </p>
@@ -91,9 +93,9 @@
 
             <!-- Slider 3 -->
             <div class="swiper-slide">
-                <div class="h-99" >
-                <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-2-st1.jpg">
-                    <div class="relative z-20 -mt-94 px-6 sm:pl-10  ">
+                <div class="h-99">
+                    <img class="object-cover h-99 w-full object-top filter brightness-75 relative z-10" src="public/sd/sd-2-st1.jpg">
+                    <div class="relative z-20 -mt-44 px-6 sm:pl-10  ">
                         <div class="px-8 mr-2 sm:-mr-48 lg:-mr-32 xl:mr-72">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg sm:mr-80">
                                 <p class="text-sm md:text-xl text-white font-bold">SD Negeri 4 Sukawana, Kintamani, Kabupaten Bangli </p>
