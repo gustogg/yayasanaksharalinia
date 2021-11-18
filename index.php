@@ -29,7 +29,7 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay="autoplay" loop="" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
+                    <video autoplay="autoplay" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
                         <source src="/images/video.mp4" type="video/mp4" class="" />
                         Your browser does not support the video tag.
                     </video>
