@@ -116,14 +116,14 @@
 
             <div class="flex justify-center items-center">
               <div class="px-10 mx- mt-10 mb-10 bg-white shadow-md rounded-md">
-                <img class="pt-5 mx-auto text-justify pb-10 bg-white rounded-sm shadow-sm h-85" src="/images/Ketua.png">
+                <img class="pt-5 mx-auto text-justify pb-10 bg-transparent rounded-sm shadow-sm h-85" src="/images/Ketua.png">
                 <p class="mx-auto w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
                   <strong>Ketua Yayasan</strong><br>
                   R.MANMAGILAN S.E.,M.Si.
                 </p>
               </div>
               <div class="px-10 mt-10 mb-10 bg-white shadow-md rounded-md">
-                <img class="pl-3 pt-5 text-justify pb-10 bg-white rounded-sm shadow-sm h-85 " src="/images/Penasihat.jpg">
+                <img class="pl-3 pt-5 text-justify pb-10 bg-transparent rounded-sm shadow-sm h-85 " src="/images/Penasihat.jpg">
                 <p class="w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
                   <strong>Penasihat</strong><br>
                   SRI DHAREN S.H.,M.B.A.
@@ -160,7 +160,7 @@
       <p class="text-red-500 text-center text-3xl font-bold">TENTANG KAMI</p>
 
     </div>
-    <div class="pt-24">
+    <div class="">
       <p class="text-center text-3xl font-bold mb-6">Yayasan Akhsara Linia Indonesia</p>
       <p class="text-center font-normal mb-10 px-10 pb-24">Yayasan Akshara Linia Indonesia adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Menteri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021
       </p>
@@ -256,15 +256,15 @@
 
             <div class="justify-center items-center">
               <div class="px-10 mx- mt-10 mb-10 pb-10 bg-white shadow-md rounded-md">
-                <img class="pt-5 mx-auto text-justify pb-10 bg-white rounded-sm shadow-sm h-85" src="/images/Ketua.png">
-                <p class="mx-auto w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
+                <img class="pt-5 mx-auto text-justify pb-10 bg-transparent rounded-sm shadow-sm h-85" src="/images/Ketua.png">
+                <p class="mx-auto w-56 text-center -mt-9 pb-4 bg-red-500 text-white ">
                   <strong>Ketua Yayasan</strong><br>
                   R.MANMAGILAN S.E.,M.Si.
                 </p>
               </div>
               <div class="px-10 mt-10 mb-10 pb-10 bg-white shadow-md rounded-md">
-                <img class="pl-3 pt-5 text-justify pb-10 bg-white rounded-sm shadow-sm h-85 " src="/images/Penasihat.jpg">
-                <p class="w-60 text-center -mt-9 pb-4 bg-red-500 text-white ">
+                <img class="mx-auto pt-5 text-justify pb-10 bg-transparent rounded-sm shadow-sm h-85 " src="/images/Penasihat.jpg">
+                <p class="mx-auto w-56 text-center -mt-9 pb-4 bg-red-500 text-white ">
                   <strong>Penasihat</strong><br>
                   SRI DHAREN S.H.,M.B.A.
                 </p>
