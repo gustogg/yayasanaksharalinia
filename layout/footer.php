@@ -1,7 +1,7 @@
 <div class="bg-red-700 bg-opacity-100 bg-cover bg-center">
     <div class="grid grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-4 object-top px-8 sm:px-32 pt-4 sm:pt-8 lg:ml-0 pb-4 sm:pb-8 w-screen -ml-8 md:ml-0">
         <div class="col-span-1">
-            <img src="images/logo.png" class="h-16 sm:h-24 md:h-40 w-auto mx-auto sm:mx-0">
+            <img src="/images/logo.png" class="h-16 sm:h-24 md:h-40 w-auto mx-auto sm:mx-0">
         </div>
         <div class="col-span-1 flex flex-col ">
             <a class="text-sm sm:text-xl font-semibold text-white w-full">Our Page List</a>
@@ -17,15 +17,15 @@
             <p class="text-sm sm:text-xl font-semibold text-white">Contact Us</p>
             <div class="-ml-1.5">
                 <div class="text-xs sm:text-base my-2 flex">
-                    <img class="h-4 sm:h-7" src="images/gmail.svg">
+                    <img class="h-4 sm:h-7" src="/images/gmail.svg">
                     <a href="mailto:aksharalinia@gmail.com"><p class="pl-1 sm:pl-1 text-gray-300">aksharalinia@gmail.com </p></a>
                 </div>
                 <div class="text-xs sm:text-base my-2 flex">
-                    <img class="ml-2 h-4 sm:h-7" src="images/whatsapp.svg">
+                    <img class="ml-2 h-4 sm:h-7" src="/images/whatsapp.svg">
                     <a href="https://api.whatsapp.com/send?phone=6281360689378"><p class="ml-2 text-gray-300">+62 813 6068 9378</p></a>
                 </div>
                 <div class="text-xs sm:text-base my-2 flex mt-3">
-                    <img class="ml-2 h-4 sm:h-7" src="images/whatsapp.svg">
+                    <img class="ml-2 h-4 sm:h-7" src="/images/whatsapp.svg">
                     <a href="https://api.whatsapp.com/send?phone=628119401814"><p class="ml-3 text-gray-300">+62 811 9401 814</p></a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <p class="text-sm sm:text-xl text-left font-semibold text-white">Our Location</p>
             <div class="h-40 w-72">
                 <a href="https://goo.gl/maps/tD7NcFRXL6bnsccJ7" target="_blank" rel="noopener noreferrer">
-                    <img class="my-2 rounded-md  w-full h-full object-cover" src="public/gmaps-lg.png">
+                    <img class="my-2 rounded-md  w-full h-full object-cover" src="/public/gmaps-lg.png">
                 </a>
             </div>
 
