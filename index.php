@@ -43,7 +43,7 @@
                     </div> -->
                     <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
                         <div class="px-8 w-max pb-2 mx-auto">
-                            <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg w-max justify-center">
+                            <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg w-52 md:w-max justify-center">
                                 <p class="text-sm md:text-xl text-white font-bold"> Selamat Datang di <strong>Yayasan Akshara Linia Indonesia </strong></p>
                             </div>
                         </div>
