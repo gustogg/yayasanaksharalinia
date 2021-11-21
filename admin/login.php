@@ -1,12 +1,40 @@
+<?php 
+ 
+include 'koneksi.php';
+ 
+error_reporting(0);
+ 
+session_start();
+ 
+if (isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
+ 
+if (isset($_POST['submit'])) {
+    $email = $_POST['username'];
+    $password = $_POST['password'];
+ 
+    $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+    if ($result->num_rows > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $row['username'];
+        header("Location: index.php");
+    } else {
+        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
+    }
+}
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Login Template by David Grzyb</title>
-	<meta name="author" content="David Grzyb">
-    <meta name="description" content="">
+    <title>Login - Admin Yayasan Akshara Linia Indonesia</title>
 
     <link href="/public/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +45,11 @@
         }
     </style>
 </head>
+
 <body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0" style="font-family:'Lato',sans-serif;">
+    <div class="alert alert-warning" role="alert">
+        <?php echo $_SESSION['error'] ?>
+    </div>
     <header class="max-w-lg mx-auto">
         <a href="#">
             <h1 class="text-4xl font-bold text-white text-center">Login</h1>
@@ -33,17 +65,17 @@
         <section class="mt-10">
             <form class="flex flex-col" method="POST" action="#">
                 <div class="mb-6 pt-3 rounded bg-gray-200">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="email">Username</label>
-                    <input type="text" id="username" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="username" >Username</label>
+                    <input type="text" id="username" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3" value="<?php echo $username; ?>" required >
                 </div>
                 <div class="mb-6 pt-3 rounded bg-gray-200">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
-                    <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password" >Password</label>
+                    <input type="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3" value="<?php echo $_POST['password']; ?>" required>
                 </div>
                 <!-- <div class="flex justify-end">
                     <a href="#" class="text-sm text-purple-600 hover:text-purple-700 hover:underline mb-6">Forgot your password?</a>
                 </div> -->
-                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit">Sign In</button>
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit" name="submit">Sign In</button>
             </form>
         </section>
     </main>
@@ -58,4 +90,5 @@
         <a href="#" class="hover:underline">Privacy</a>
     </footer> -->
 </body>
+
 </html>
