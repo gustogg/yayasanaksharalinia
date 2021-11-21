@@ -1,29 +1,30 @@
-<?php
-
+<?php 
+ 
 include 'koneksi.php';
-
+ 
 error_reporting(0);
-
+ 
 session_start();
-
-if (isset($_POST["login"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-    $result = mysqli_query($conn, "SELECT * FROM admin WHERE username='$username'");
-
-    if (mysqli_num_rows($result) === 1) {
-        // cek password
-        $row = mysqli_fetch_assoc($result);
-        if ($password == $row["password"]) {
-            $erus = true;
-            header("Location: index.php");
-            exit;
-        }
-    }
-    $error = true;
+ 
+if (isset($_SESSION['username'])) {
+    header("Location: index.php");
 }
-
+ 
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+ 
+    $sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+    if ($result->num_rows > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION['username'] = $row['username'];
+        header("Location: index.php");
+    } else {
+        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
+    }
+}
+ 
 ?>
 
 <!DOCTYPE html>
@@ -39,19 +40,16 @@ if (isset($_POST["login"])) {
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .body-bg {
-            background-color: #f5515f;
+            background-color: #217ee8;
             background-image: linear-gradient(312deg, #a1051d 0%, #f5515f 74%);
         }
     </style>
 </head>
 
 <body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0" style="font-family:'Lato',sans-serif;">
-    <!-- Jika Password Salah -->
-    <?php if (isset($error)) : ?>
-        <div class="alert alert-warning" role="alert">
-            <?php echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>"; ?>
-        </div>
-    <?php endif; ?>
+    <div class="alert alert-warning" role="alert">
+        <?php echo $_SESSION['error'] ?>
+    </div>
     <header class="max-w-lg mx-auto">
         <a href="#">
             <h1 class="text-4xl font-bold text-white text-center">Login</h1>
@@ -67,14 +65,14 @@ if (isset($_POST["login"])) {
         <section class="mt-10">
             <form class="flex flex-col" method="post" action="">
                 <div class="mb-6 pt-3 rounded bg-gray-200">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="username">Username</label>
-                    <input type="text" name="username" id="username" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="username" >Username</label>
+                    <input type="text" id="username" value="<?php echo $username; ?>" required class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3" >
                 </div>
                 <div class="mb-6 pt-3 rounded bg-gray-200">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password">Password</label>
-                    <input type="password" name="password" id="password" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="password" >Password</label>
+                    <input type="password" id="password" value="<?php echo $_POST['password']; ?>" required class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-red-600 transition duration-500 px-3 pb-3">
                 </div>
-                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit" name="login">Login</button>
+                <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit" name="submit">Sign In</button>
             </form>
         </section>
     </main>
