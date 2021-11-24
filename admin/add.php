@@ -3,8 +3,9 @@ require 'koneksi.php';
 session_start();
 // cek apakah sudah login
 if (!isset($_SESSION["login"])) {
-    header("Location : login.php");
+    header("Location: login.php");
     exit;
+    
 }
 
 ?>

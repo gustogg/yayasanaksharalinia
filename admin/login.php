@@ -3,6 +3,10 @@ require 'koneksi.php';
 
 session_start();
 
+if(isset($_SESSION["login"])){
+    header("Location: index.php");
+}
+
 if (isset($_POST["login"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
