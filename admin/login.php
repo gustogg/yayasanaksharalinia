@@ -51,7 +51,7 @@ if (isset($_POST["login"])) {
     <!-- Jika Password Salah -->
     <?php if (isset($error)) : ?>
         <div class="alert alert-warning" role="alert">
-            <?php echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>"; ?>
+            <?php echo "<script>alert('Username atau password Anda salah. Silahkan coba lagi!')</script>"; ?>
         </div>
     <?php endif; ?>
 
