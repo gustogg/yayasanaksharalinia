@@ -1,8 +1,5 @@
 <?php
-
-include 'koneksi.php';
-
-error_reporting(0);
+require 'koneksi.php';
 
 session_start();
 
@@ -10,13 +7,14 @@ if (isset($_POST["login"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $result = mysqli_query($conn, "SELECT * FROM admin WHERE username='$username'");
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE username='$username'");
 
     if (mysqli_num_rows($result) === 1) {
         // cek password
         $row = mysqli_fetch_assoc($result);
         if ($password == $row["password"]) {
-            $erus = true;
+            // Set Session
+            $_SESSION ["login"] = true;
             header("Location: index.php");
             exit;
         }
@@ -52,6 +50,7 @@ if (isset($_POST["login"])) {
             <?php echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>"; ?>
         </div>
     <?php endif; ?>
+
     <header class="max-w-lg mx-auto">
         <a href="#">
             <h1 class="text-4xl font-bold text-white text-center">Login</h1>

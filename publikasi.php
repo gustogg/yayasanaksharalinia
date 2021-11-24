@@ -16,7 +16,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
                 <!-- Publikasi Div -->
                 <div class="grid col-span-1 p-6">
-                    <a href="#">
+                    <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
                                 <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb1.jpg">
@@ -27,7 +27,7 @@
                 </div>
                 <!-- Publikasi Div -->
                 <div class="grid col-span-1 p-6">
-                    <a href="#">
+                    <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
                                 <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
@@ -38,7 +38,7 @@
                 </div>
                 <!-- Publikasi Div -->
                 <div class="grid col-span-1 p-6">
-                    <a href="#">
+                    <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
                                 <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb3.jpg">
@@ -49,7 +49,7 @@
                 </div>
                 <!-- Publikasi Div -->
                 <div class="grid col-span-1 p-6">
-                    <a href="#">
+                    <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
                                 <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb4.jpg">
@@ -60,7 +60,7 @@
                 </div>
                 <!-- Publikasi Div -->
                 <div class="grid col-span-1 p-6">
-                    <a href="#">
+                    <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
                                 <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb5.jpg">
@@ -84,8 +84,9 @@
                     <a>
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                                <video id="my-video" class="video-js w-full object-cover " controls preload="auto" width="507" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                                    <source src="images/video.mp4" class="object-cover " type="video/mp4" />
+                                <video class="w-full h-auto" controls>
+                                    <source src="public/publikasi/pb6.mp4#t=0.1" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                                 <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Awal pembelajaran tatap muka pada minggu pertama bulan November, murid-murid SD Negeri 4 Sukawana merasa senang mendapatkan fasilitas meja belajar dan kursi yang baru dari Yayasan Akshara Linia Indonesia.</p>
                             </div>
