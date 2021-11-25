@@ -30,7 +30,7 @@
                     <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                                <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
+                                <img class="object-cover w-screen h-52  md:h-64 object-top" src="public/publikasi/pb2.jpg">
                                 <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Photo Bersama para guru di sekolah SD Negeri 7 Manukaya Gianyar, didampingi oleh Pak I Ketut Arinata Yasa, Tampak Siring.</p>
                             </div>
                         </button>
@@ -63,7 +63,7 @@
                     <a href="">
                         <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                             <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                                <img class="object-cover w-full h-64 object-top" src="public/publikasi/pb5.jpg">
+                                <img class="object-cover w-full h-72 object-top" src="public/publikasi/pb5.jpg">
                                 <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify">Perjalanan menuju Lokasi SD Negeri 4 Sukawana, Kabupaten Bangli dengan lokasi pendakian dan penurunan yang terjal.</p>
                             </div>
                         </button>

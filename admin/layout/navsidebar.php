@@ -10,9 +10,9 @@
             <i class="fas fa-tachometer-alt mr-3"></i>
             Dashboard
         </a>
-        <a href="/admin/add.php" class="flex items-center text-white py-4 pl-6 nav-item">
+        <a href="/admin/keloladata.php" class="flex items-center text-white py-4 pl-6 nav-item">
             <i class="fas fa-sticky-note mr-3"></i>
-            Tambah Data
+            Kelola Data
         </a>
     </nav>
 </aside>
@@ -27,7 +27,7 @@
             </button>
             <button x-show="isOpen" @click="isOpen = false" class="h-full w-full fixed inset-0 cursor-default"></button>
             <div x-show="isOpen" class="absolute w-32 bg-white rounded-lg shadow-lg py-2 mt-16">
-                <a href="#" class="block px-4 py-2 account-link hover:text-white">Sign Out</a>
+                <a href="/admin/logout.php" class="block px-4 py-2 account-link hover:text-white">Sign Out</a>
             </div>
         </div>
     </header>
@@ -48,9 +48,9 @@
                 <i class="fas fa-tachometer-alt mr-3"></i>
                 Dashboard
             </a>
-            <a href="/admin/add.php" class="flex items-center text-white py-2 pl-4">
+            <a href="/admin/keloladata.php" class="flex items-center text-white py-2 pl-4">
                 <i class="fas fa-sticky-note mr-3"></i>
-                Tambah Data
+                Kelola Data
             <a href="#" class="flex items-center text-white py-2 pl-4 nav-item">
                 <i class="fas fa-sign-out-alt mr-3"></i>
                 Sign Out

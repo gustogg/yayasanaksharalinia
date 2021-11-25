@@ -1,6 +1,6 @@
 <?php
 require './admin/koneksi.php'; 
-$result = mysqli_query($conn, "SELECT * FROM publikasi");
+$publikasi = query("SELECT * FROM publikasi");
 ?>
 
 <?php include 'layout/header.php'; ?>
@@ -20,7 +20,7 @@ $result = mysqli_query($conn, "SELECT * FROM publikasi");
         <div class="md:mx-12 xl:mx-40 pt-14 pb-8 px-8 bg-gray-100">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
                 <!-- Publikasi Div -->
-                <?php while ($row = mysqli_fetch_assoc($result)) : ?>
+                <?php foreach ($publikasi as $row) : ?>
                     <?php if ($row["jenis_file"] == "foto") { ?>
                         <!-- Foto -->
                         <div class="grid col-span-1 p-6 hover:border-red-500 border-2 rounded-md border-gray-100 bg-white shadow-md rounded-md cursor-pointer">
@@ -45,7 +45,7 @@ $result = mysqli_query($conn, "SELECT * FROM publikasi");
                             </a>
                         </div>
                     <?php } ?>
-                <?php endwhile; ?>
+                <?php endforeach; ?>
             </div>
         </div>
 
