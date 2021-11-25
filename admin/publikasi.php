@@ -66,7 +66,7 @@ $publikasi = query("SELECT * FROM publikasi");
                                                         Edit
                                                     </button>
                                                 </a>
-                                                <a href="publikasi-delete.php?hapus_data=<?php echo $row["id"]; ?>" name="hapus_data" class="mt-3 flex flex-row bg-red-200 text-red-800 rounded-lg hover:bg-red-400 hover:text-red-900 px-6 py-3 w-max">
+                                                <a href="publikasi-delete.php?hapus_data=<?php echo $row["id"]; ?>"class="mt-3 flex flex-row bg-red-200 text-red-800 rounded-lg hover:bg-red-400 hover:text-red-900 px-6 py-3 w-max">
                                                     <button>
                                                         <i class="fas fa-trash-alt"></i>
                                                         Hapus
