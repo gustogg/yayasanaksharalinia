@@ -1,5 +1,11 @@
 <?php 
 require 'koneksi.php';
+session_start();
+// cek apakah sudah login
+if (!isset($_SESSION["login"])) {
+    header("Location: login.php");
+    exit;
+}
 
 $judul = $_POST['judul'];
 $jenis_file = $_POST['jenis_file'];
@@ -28,7 +34,7 @@ if($nama_file != ""){
         echo "<script>alert('ekstensi file hanya bisa png,jpg,jpeg dan mp4');window.location='publikasi-add.php'</script>";
     }
 }else {
-    echo "<script>alert('silahkan tambah produk terlebih dahulu');window.location='publikasi-add.php'</script>";
+    echo "<script>alert('silahkan tambahkan dokumentasi publikasi terlebih dahulu');window.location='publikasi-add.php'</script>";
 }
 
 ?>
