@@ -11,12 +11,12 @@ if($nama_file != ""){
     $ekstensi = strtolower(end($x));
     $file_tmp = $_FILES['nama_file']['tmp_name'];
     $angka_acak = rand(1, 999);
-    $nama_gambar_baru = $angka_acak.'-'.$nama_file;
+    $nama_file_baru = $angka_acak.'-'.$nama_file;
 
     if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
-        move_uploaded_file($file_tmp, '../public/publikasi/'.$nama_gambar_baru);
+        move_uploaded_file($file_tmp, '../public/publikasi/'.$nama_file_baru);
 
-        $query = "INSERT INTO publikasi (judul, jenis_file, nama_file) VALUES ('$judul', '$jenis_file', '$nama_gambar_baru')";
+        $query = "INSERT INTO publikasi (judul, jenis_file, nama_file) VALUES ('$judul', '$jenis_file', '$nama_file_baru')";
         $result = mysqli_query($conn, $query);
         if(!$result){
             die("Query error : ".mysqli_errno($conn)." - ".mysqli_error($conn));
