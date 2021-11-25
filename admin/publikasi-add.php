@@ -10,7 +10,7 @@ if (!isset($_SESSION["login"])) {
 ?>
 
 <?php include '../admin/layout/header.php'; ?>
-<title>Tailwind Admin Template</title>
+<title>Tambah Data Publikasi</title>
 </head>
 
 <body class="bg-gray-100 font-sans flex">
@@ -18,25 +18,47 @@ if (!isset($_SESSION["login"])) {
     <?php include '../admin/layout/navsidebar.php'; ?>
 
 
-    <div class="w-full overflow-x-hidden border-t flex flex-col">
+    <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
-            <h1 class="text-3xl text-black pb-3 font-bold">Tambah Data</h1>
+            <h1 class="w-full text-3xl text-black pb-6">Publikasi</h1>
 
-            <div class="flex flex-wrap mt-3 bg-white">
-                <div class="w-full p-6">
-                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="">Tambah Data pada Kerja Kami</a></p>
-                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="">Tambah Data pada Publikasi</a></p>
+            <div class="flex flex-wrap">
+                <div class="w-full my-6 pr-0 lg:pr-2">
+                    <p class="text-xl pb-6 flex items-center">
+                        <i class="fas fa-list mr-3"></i> Tambah Data
+                    </p>
+                    <div class="leading-loose">
+                        <form class="p-10 bg-white rounded shadow-xl" method="POST" action="publikasi-add-process.php" enctype="multipart/form-data">
+                            <div class="">
+                                <label class="block text-sm text-gray-600" for="name">Judul</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="judul" type="text" required="" placeholder="Judul Publikasi" aria-label="Name">
+                            </div>
+                            <div class="mt-2">
+                                <label class=" block text-sm text-gray-600" for="jenis_file">Jenis File</label>
+                                <select class="w-full px-5  py-4 text-gray-700 bg-gray-200 rounded" id="jenis_file" name="jenis_file">
+                                    <option class="w-full px-5  py-4 text-gray-700 bg-white rounded" name="foto" value="foto">Foto</option>
+                                    <option class="w-full px-5  py-4 text-gray-700 bg-white rounded" name="video" value="video">Video</option>
+                                </select>
+                            </div>
+                            <div class="mt-2">
+                                <label class="block text-sm text-gray-600" for="fileupload">Pilih Foto / Video</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_file" id="fileupload">
+                            </div>
+                            <div class="mt-6 flex flex-row">
+                                <div class="">
+                                    <button class="px-4 py-1 text-white font-light tracking-wider bg-red-500 hover:bg-red-600 rounded" type="submit">Submit</button>
+                                </div>
+                                <div class="ml-4">
+                                    <button class="px-4 py-1 text-white font-light tracking-wider bg-gray-500 hover:bg-gray-600 rounded" onclick="location.href='publikasi.php'">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+
+
             </div>
         </main>
-        <div class="flex justify-end  w-full">
-            <div class="w-screen absolute bottom-0  bg-white text-right py-2 px-4">
-                <p class="text-xs sm:text-sm text-gray-400">Copyright &copy; Yayasan Aksahra Linia Indonesia 2021. All Right Reserved.</p>
-            </div>
-        </div>
-
-    </div>
-
     </div>
 
     <!-- AlpineJS -->

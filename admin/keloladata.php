@@ -10,7 +10,7 @@ if (!isset($_SESSION["login"])) {
 ?>
 
 <?php include '../admin/layout/header.php'; ?>
-<title>Tailwind Admin Template</title>
+<title>Kelola Data - Admin</title>
 </head>
 
 <body class="bg-gray-100 font-sans flex">
@@ -24,8 +24,8 @@ if (!isset($_SESSION["login"])) {
 
             <div class="flex flex-wrap mt-3 bg-white">
                 <div class="w-full p-6">
-                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="">Tambah Data pada Kerja Kami</a></p>
-                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="publikasi.php">Tambah Data pada Publikasi</a></p>
+                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="">Kelola Data pada Kerja Kami</a></p>
+                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="publikasi.php">Kelola Data pada Publikasi</a></p>
                 </div>
             </div>
         </main>

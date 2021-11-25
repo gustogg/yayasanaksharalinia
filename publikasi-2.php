@@ -26,7 +26,7 @@ $publikasi = query("SELECT * FROM publikasi");
                         <div class="grid col-span-1 p-6 hover:border-red-500 border-2 rounded-md border-gray-100 bg-white shadow-md rounded-md cursor-pointer">
                             <a href="">
                                 <button class="">
-                                    <img class="object-cover w-screen h-52  md:h-64 object-top" src="public/publikasi/<?php echo $row["lokasi_file"]; ?>">
+                                    <img class="object-cover w-screen h-52  md:h-64 object-top" src="public/publikasi/<?php echo $row["nama_file"]; ?>">
                                     <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify"><?php echo $row["judul"]; ?></p>
                                 </button>
                             </a>
@@ -37,7 +37,7 @@ $publikasi = query("SELECT * FROM publikasi");
                             <a href="">
                                 <button class="">
                                     <video class="w-full h-auto" controls>
-                                        <source src="public/publikasi/<?php echo $row["lokasi_file"] ?>#t=0.1" type="video/mp4">
+                                        <source src="public/publikasi/<?php echo $row["nama_file"] ?>#t=0.1" type="video/mp4">
                                         Your browser does not support the video tag.
                                     </video>
                                     <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold text-justify"><?php echo $row["judul"]; ?></p>

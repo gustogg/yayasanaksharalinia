@@ -6,11 +6,11 @@ if (!isset($_SESSION["login"])) {
     header("Location: login.php");
     exit;
 }
-
+$publikasi = query("SELECT * FROM publikasi");
 ?>
 
 <?php include '../admin/layout/header.php'; ?>
-<title>Tailwind Admin Template</title>
+<title>Kelola Data Publikasi</title>
 </head>
 
 <body class="bg-gray-100 font-sans flex">
@@ -20,35 +20,92 @@ if (!isset($_SESSION["login"])) {
 
     <div class="w-full overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
-            <h1 class="text-3xl text-black pb-3 font-bold">Tambah Data</h1>
+            <h1 class="text-3xl text-black pb-3 font-bold">Publikasi</h1>
 
-            <div class="w-full mt-6">
+            <div class="w-full mt-4">
+                <div class="">
+                    <a href="" class="flex flex-row bg-blue-200 text-blue-800 hover:bg-blue-400 hover:text-blue-900 rounded-lg px-6 py-3 w-max">
+                        <button>
+                            <i class="far fa-edit"></i>
+                            Tambah Publikasi
+                        </button>
+                    </a>
+                </div>
                 <div class="bg-white mt-3 overflow-auto">
                     <table class="min-w-full bg-white">
-                        <thead class="bg-gray-800 text-white">
+                        <thead class="bg-red-800 text-white">
                             <tr>
                                 <th class="py-3 px-4 uppercase font-semibold text-sm">No</th>
-                                <th class="w-8/12 text-left py-3 px-4 uppercase font-semibold text-sm">Judul Kegiatan</th>
-                                <th class="w-1/12 text-left py-3 px-4 uppercase font-semibold text-sm">File</th>
+                                <th class="w-6/12 text-left py-3 px-4 uppercase font-semibold text-sm">Judul Kegiatan</th>
+                                <th class="w-3/12 text-left py-3 px-4 uppercase font-semibold text-sm">File</th>
                                 <th class="w-1/12 py-3 px-4 uppercase font-semibold text-sm">Type File</th>
                                 <th class="w-2/12py-3 px-4 uppercase font-semibold text-sm">Opsi</td>
                             </tr>
                         </thead>
                         <tbody class="text-gray-700">
-                            <tr>
-                                <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">1</a></td>
-                                <td class="w-8/12  text-left py-3 px-4">Kepala Sekolah SD Negeri 7 Gianyar, Bpk.I Gusti Ngurah Mideh S. Pd sedang berbincang kepada Penasihat Akshara Linia Indonesia, “ Sri Dharen S.H., M.B.A,” mengucapkan terima kasih telah memperhatikan kebutuhan sekolah kami di Manukaya, Kabupaten Gianyar.</td>
-                                <td class="w-1/12text-left py-3 px-4">Smith</td>
-                                <td class="w-1/12text-left py-3 px-4">Smith</td>
-                                <td class=" w-2/12 text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            </tr>
-                            <tr class="">
-                                <td class="py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">2</a></td>
-                                <td class="w-8/12 text-left py-3 px-4">Emma</td>
-                                <td class="w-1/12 text-left py-3 px-4">Johnson</td>
-                                <td class="w-1/12text-left py-3 px-4">Smith</td>
-                                <td class="w-2/12 text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                            </tr>
+                            <?php $i = 0; ?>
+                            <?php foreach ($publikasi as $row) : ?>
+                                <?php if ($row["jenis_file"] == "foto") { ?>
+                                    <?php $i++; ?>
+                                    <?php if ($i % 2 == 1) { ?>
+                                        <tr class="bg-white">
+                                        <?php } else { ?>
+                                        <tr class="bg-gray-200">
+                                        <?php } ?>
+                                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500"><?= $i; ?></a></td>
+                                        <td class="w-6/12  text-left py-3 px-4"><?= $row["judul"]; ?></td>
+                                        <td class="w-3/12text-left py-3 px-4">
+                                            <img src="/public/publikasi/<?= $row["nama_file"]; ?>">
+                                        </td>
+                                        <td class="w-1/12text-left py-3 px-4"><?= $row["jenis_file"]; ?></td>
+                                        <td class="w-2/12 text-left">
+                                            <a href="publikasi-edit.php?=<?php echo $row["id"];?>" class="flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
+                                                <button>
+                                                    <i class="far fa-edit"></i>
+                                                    Edit
+                                                </button>
+                                            </a>
+                                            <a href="publikasi-delete.php?=<?php echo $row["id"]; ?>" class="mt-3 flex flex-row bg-red-200 text-red-800 rounded-lg hover:bg-red-400 hover:text-red-900 px-6 py-3 w-max">
+                                                <button>
+                                                    <i class="fas fa-trash-alt"></i>
+                                                    Hapus
+                                                </button>
+                                            </a>
+                                        </td>
+                                        </tr>
+                                    <?php } elseif ($row["jenis_file"] == "video") { ?>
+                                        <?php $i++; ?>
+                                        <?php if ($i % 2 == 1) { ?>
+                                            <tr class="bg-white">
+                                            <?php } else { ?>
+                                            <tr class="bg-gray-200">
+                                            <?php } ?>
+                                            <td class="py-3 px-4"><a class="hover:text-blue-500"><?php echo $i; ?></a></td>
+                                            <td class="w-6/12 text-left py-3 px-4"><?= $row["judul"]; ?></td>
+                                            <td class="w-3/12 text-left py-3 px-4">
+                                                <video class="w-full h-auto" controls>
+                                                    <source src="/public/publikasi/<?= $row["nama_file"]; ?>#t=0.1" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </td>
+                                            <td class="w-1/12text-left py-3 px-4"><?= $row["jenis_file"]; ?></td>
+                                            <td class="w-2/12 text-left">
+                                                <a href="publikasi-edit.php?=<?php echo $row["id"];?>" class="flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
+                                                    <button>
+                                                        <i class="far fa-edit"></i>
+                                                        Edit
+                                                    </button>
+                                                </a>
+                                                <a href="publikasi-delete.php?=<?php echo $row["id"];?>" class="mt-3 flex flex-row bg-red-200 text-red-800 rounded-lg hover:bg-red-400 hover:text-red-900 px-6 py-3 w-max">
+                                                    <button>
+                                                        <i class="fas fa-trash-alt"></i>
+                                                        Hapus
+                                                    </button>
+                                                </a>
+                                            </td>
+                                            </tr>
+                                        <?php } ?>
+                                    <?php endforeach; ?>
                         </tbody>
                     </table>
                 </div>

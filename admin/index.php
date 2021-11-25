@@ -10,7 +10,7 @@ if (!isset($_SESSION["login"])) {
 
 
 <?php include '../admin/layout/header.php'; ?>
-<title>Tailwind Admin Template</title>
+<title>Dashboard - Admin</title>
 </head>
 
 <body class="bg-gray-100 font-sans flex">
