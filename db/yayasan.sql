@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 25, 2021 at 11:52 AM
+-- Generation Time: Nov 26, 2021 at 01:30 PM
 -- Server version: 5.7.33
 -- PHP Version: 8.0.13
 
@@ -20,6 +20,36 @@ SET time_zone = "+00:00";
 --
 -- Database: `yayasan`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kerjakami`
+--
+
+CREATE TABLE `kerjakami` (
+  `id` int(11) NOT NULL,
+  `kategori` varchar(10) NOT NULL,
+  `lokasi_kegiatan` varchar(255) NOT NULL,
+  `sub_kegiatan1` varchar(255) NOT NULL,
+  `nama_foto1` varchar(255) NOT NULL,
+  `nama_foto2` varchar(255) NOT NULL,
+  `sub_kegiatan2` varchar(255) DEFAULT NULL,
+  `nama_foto3` varchar(255) DEFAULT NULL,
+  `nama_foto4` varchar(255) DEFAULT NULL,
+  `sub_kegiatan3` varchar(255) DEFAULT NULL,
+  `nama_foto5` varchar(255) DEFAULT NULL,
+  `nama_foto6` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `kerjakami`
+--
+
+INSERT INTO `kerjakami` (`id`, `kategori`, `lokasi_kegiatan`, `sub_kegiatan1`, `nama_foto1`, `nama_foto2`, `sub_kegiatan2`, `nama_foto3`, `nama_foto4`, `sub_kegiatan3`, `nama_foto5`, `nama_foto6`) VALUES
+(1, 'sd', 'SD Negeri 7 Manukaya, Kabupaten Gianyar', 'Pemberian Rak Buku Pengganti', 'sd-1-b.jpg', 'sd-1-a.jpg', 'SD Negeri 7 Manukaya, menerima buku bacaan, papan tulis, container boxes', 'sd-1-st1.jpg', '', 'Serah Terima Materials kepada SD Negeri 7 Manukaya', 'sd-1-st2.jpg', 'sd-1-st3.jpg'),
+(2, 'tk', 'TK Sekolah Jauh Desa Pedawa, Singaraja, Kabupaten Buleleng', 'Perbaikan Tangga tanpa pegangan yang Beresiko bagi anak anak TK', 'tk-1-b.jpg', 'tk-1-a.jpg', '', '', '', '', '', ''),
+(3, 'sd', 'SD Negeri 4 Sukawana, Kintamani, Kabupaten Bangli', 'Pemberian 20 sets Meja belajar serta kursi bagi sisawa/i  Kelas 1 SD', 'sd-2-b.jpg', 'sd-2-a.jpg', 'Serah Terima Materials kepada SD Negeri 4 Sukawana', 'sd-2-st1.jpg', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -70,6 +100,12 @@ INSERT INTO `user` (`id`, `username`, `password`) VALUES
 --
 
 --
+-- Indexes for table `kerjakami`
+--
+ALTER TABLE `kerjakami`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `publikasi`
 --
 ALTER TABLE `publikasi`
@@ -86,10 +122,16 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `kerjakami`
+--
+ALTER TABLE `kerjakami`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `publikasi`
 --
 ALTER TABLE `publikasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user`
