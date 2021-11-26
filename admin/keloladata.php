@@ -24,7 +24,9 @@ if (!isset($_SESSION["login"])) {
 
             <div class="flex flex-wrap mt-3 bg-white">
                 <div class="w-full p-6">
-                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="">Kelola Data pada Kerja Kami</a></p>
+                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="kerjakami-sd.php">Kelola Data pada Kerja Kami - SD </a></p>
+                    <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="kerjakami-tk.php">Kelola Data pada Kerja Kami - TK </a></p>
+
                     <p class="text-xl py-2 hover:text-red-600 font-semibold"><a href="publikasi.php">Kelola Data pada Publikasi</a></p>
                 </div>
             </div>

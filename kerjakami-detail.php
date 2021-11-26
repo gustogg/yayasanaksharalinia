@@ -15,11 +15,11 @@ $data = mysqli_fetch_assoc($hasil);
     <div class="pt-16 w-full md:w-11/12 lg:w-4/5 mx-auto">
         <div class="">
             <?php if ($data["nama_foto5"] != NULL) {?>
-            <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto5"]; ?>" alt="image" />
+            <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"];?>/<?php echo $data["nama_foto5"]; ?>" alt="image" />
             <?php } else if ($data["nama_foto3"] != NULL) {?>
-                <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto3"]; ?>" alt="image" />
+                <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"]; ?>/<?php echo $data["nama_foto3"]; ?>" alt="image" />
             <?php } else { ?>
-                <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto1"]; ?>" alt="image" />
+                <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"]; ?>/<?php echo $data["nama_foto1"]; ?>" alt="image" />
             <?php }?>
         </div>
         <div class="pt-10 pb-8 px-8 bg-gray-100 pb-14">

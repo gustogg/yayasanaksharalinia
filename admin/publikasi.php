@@ -60,7 +60,7 @@ $publikasi = query("SELECT * FROM publikasi");
                                             </td>
                                             <td class="w-1/12text-left py-3 px-4"><?= $row["jenis_file"]; ?></td>
                                             <td class="w-2/12 text-left">
-                                                <a href="publikasi-edit.php?=<?php echo $row["id"]; ?>" class="flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
+                                                <a href="publikasi-edit.php?=<?php echo $row["id"]; ?>" class="hidden flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
                                                     <button>
                                                         <i class="far fa-edit"></i>
                                                         Edit
@@ -91,7 +91,7 @@ $publikasi = query("SELECT * FROM publikasi");
                                                 </td>
                                                 <td class="w-1/12text-left py-3 px-4"><?= $row["jenis_file"]; ?></td>
                                                 <td class="w-2/12 text-left">
-                                                    <a href="publikasi-edit.php?edit_data=<?php echo $row["id"]; ?>" class="flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
+                                                    <a href="publikasi-edit.php?edit_data=<?php echo $row["id"]; ?>" class="hidden flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
                                                         <button>
                                                             <i class="far fa-edit"></i>
                                                             Edit
