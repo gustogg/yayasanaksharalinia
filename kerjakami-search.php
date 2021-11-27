@@ -26,14 +26,16 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE lokasi_kegiatan like '%" . $se
                     </div>
                 </div>
             </form>
-            <?php $i=0;?>
+            <?php $i = 0; ?>
             <?php foreach ($kerjakami as $tsearch) : ?>
                 <?php $i++; ?>
             <?php endforeach; ?>
             <?php if ($search == NULL) { ?>
                 <p class="mx-7 mt-6 font-medium text-xl text-center">Masukkan Keyword Pencarian Terlebih Dahulu</p>
-            <?php } elseif (($search == "ddd")) { ?>
+            <?php } elseif (($search == " ") || ($search == "  ") || ($search == "   ")) { ?>
                 <p class="mx-7 mt-6 font-medium text-xl text-center">Masukkan Keyword Pencarian Terlebih Dahulu</p>
+            <?php } elseif (($i == 0)) { ?>
+                <p class="mx-7 mt-6 font-medium text-xl text-center">Hasil Pencarian tidak ditemukan</p>
             <?php } else { ?>
                 <p class="mx-7 mt-6 font-medium text-xl text-center">Menampilkan Hasil Pencarian dari <strong>"<?php echo $search ?>"</strong></p>
                 <p class="mt-5 mx-7"><?php echo $i; ?> Hasil ditemukan.</p>
