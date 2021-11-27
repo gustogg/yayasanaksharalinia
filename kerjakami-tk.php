@@ -1,6 +1,6 @@
 <?php
 require './admin/koneksi.php';
-$kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'tk'");
+$kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'tk' ORDER BY id DESC");
 ?>
 
 <?php include 'layout/header.php'; ?>
