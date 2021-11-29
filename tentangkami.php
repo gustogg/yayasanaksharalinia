@@ -34,7 +34,7 @@
         </div>
         <div class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
           <!-- Hidden Start -->
-          <img class="mr-10 pt-5 bg-white shadow-md rounded-md w-48 pt-8" src="/images/logo.png" alt="YALI logo">
+          <img class="mr-10 bg-white shadow-md rounded-md w-48 pt-8" src="/images/logo.png" alt="YALI logo">
           <div class="-mt-60 text-left pl-52">
             <div>
               <div class="bg-red-500 text-white font-bold pl-2 py-2 pr-110 mt-4 ml-10 text-2xl mb-10">
@@ -75,7 +75,7 @@
       </div>
     </div>
     <!-- Bidang -->
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
           BIDANG ORGANISASI<br>
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl pb-10">
           STRUKTUR DAN PEMBINA YAYASAN<br>
@@ -135,7 +135,7 @@
       </div>
     </div>
 
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
           Kerja Kami<br>
@@ -174,7 +174,7 @@
         </div>
         <div class="mb-10 pt-3 px-8 text-left pb-10 list-style-type: none bg-transparent text-black">
           <!-- Hidden Start -->
-          <img class="mx-auto pt-5 bg-white w-48 shadow-md rounded-md pt-8" src="/images/logo.png" alt="YALI logo">
+          <img class="mx-auto bg-white w-48 shadow-md rounded-md pt-8" src="/images/logo.png" alt="YALI logo">
           <div class="text-center">
             <div>
               <div class="bg-red-500 text-white font-bold mx-auto py-2 mt-4 text-2xl mb-10">
@@ -215,7 +215,7 @@
       </div>
     </div>
     <!-- Bidang -->
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
           BIDANG ORGANISASI<br>
@@ -240,7 +240,7 @@
       </div>
     </div>
 
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl pb-10">
           STRUKTUR DAN PEMBINA YAYASAN<br>
@@ -275,7 +275,7 @@
       </div>
     </div>
 
-    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 pb-10 mb-16 pt-5">
+    <div class="text-center bg-gray-100 rounded-sm shadow-lg pb-10 mb-16 pt-5">
       <div>
         <div class="bg-transparent text-red-500 font-bold py-2 px-4 rounded mt-4 ml-4 text-2xl mb-10">
           Kerja Kami<br>

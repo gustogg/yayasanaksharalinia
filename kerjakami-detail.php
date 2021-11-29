@@ -22,7 +22,7 @@ $data = mysqli_fetch_assoc($hasil);
                 <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"]; ?>/<?php echo $data["nama_foto1"]; ?>" alt="image" />
             <?php }?>
         </div>
-        <div class="pt-10 pb-8 px-8 bg-gray-100 pb-14">
+        <div class="pt-10 px-8 bg-gray-100 pb-14">
             <p class="text-lg md:text-2xl text-center font-bold mb-8"><?php echo $data["lokasi_kegiatan"]; ?></p>
             <p class="text-sm md:text-lg font-semibold mb-3"><?php echo $data["sub_kegiatan1"]; ?></p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">

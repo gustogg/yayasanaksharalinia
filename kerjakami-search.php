@@ -5,7 +5,7 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE lokasi_kegiatan like '%" . $se
 ?>
 
 <?php include 'layout/header.php'; ?>
-<title>Kerja Kami - Sekolah Dasar</title>
+<title>Pencarian - Kerja Kami</title>
 </head>
 
 <body class="overflow-x-hidden">
