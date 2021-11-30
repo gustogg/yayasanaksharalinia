@@ -16,11 +16,11 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'sd' ORDER BY id DE
                 <p class="p-3 font-semibold text-base md:text-lg text-white text-center">Program Kerja Kami pada<br>Sekolah Dasar</p>
             </div>
         </div>
-        <div class="md:mx-12 xl:mx-40 pt-10 pb-8 px-4 bg-gray-100">
+        <div class="md:mx-12 xl:mx-40 pt-10 pb-8 lg:px-4 bg-gray-100">
             <form action="kerjakami-search.php" method="get" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                 <div class="container flex justify-end items-end">
-                    <div class="relative mr-6">
-                        <div class="absolute top-4 left-3"> <i class="fas fa-search text-gray-400 z-20 hover:text-gray-500"></i> </div> <input type="text" class="h-14 w-98 pl-10 pr-28 rounded-lg z-0 focus:shadow focus:outline-none" name="search" placeholder="Cari pada Kerja Kami">
+                    <div class="relative mr-6 lg:mr-2 lg:mr-6 ">
+                        <div class="absolute top-4 left-3"> <i class="fas fa-search text-gray-400 z-20 hover:text-gray-500"></i> </div> <input type="text" class="h-14 w-80 lg:w-98 pl-10 pr-28 rounded-lg z-0 focus:shadow focus:outline-none" name="search" placeholder="Cari pada Kerja Kami">
                         <div class="absolute top-2 right-2"> <button class="h-10 w-20 text-white rounded-lg bg-red-500 hover:bg-red-600" type="submit">Search</button> </div>
                     </div>
                 </div>

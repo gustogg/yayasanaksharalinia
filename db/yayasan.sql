@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 26, 2021 at 01:30 PM
+-- Generation Time: Nov 30, 2021 at 02:46 PM
 -- Server version: 5.7.33
 -- PHP Version: 8.0.13
 
@@ -131,7 +131,7 @@ ALTER TABLE `kerjakami`
 -- AUTO_INCREMENT for table `publikasi`
 --
 ALTER TABLE `publikasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`

@@ -11,7 +11,7 @@ $kategoriadd = $_GET["kategoriadd"];
 ?>
 
 <?php include '../admin/layout/header.php'; ?>
-<title>Tambah Data Publikasi</title>
+<title>Tambah Data Kerja Kami</title>
 </head>
 
 <body class="bg-gray-100 font-sans flex">
@@ -21,7 +21,7 @@ $kategoriadd = $_GET["kategoriadd"];
 
     <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
-            <h1 class="w-full text-3xl text-black pb-6">Publikasi</h1>
+            <h1 class="w-full text-3xl text-black pb-6">Kerja Kami</h1>
 
             <div class="flex flex-wrap">
                 <div class="w-full my-6 pr-0 lg:pr-2">
