@@ -1,10 +1,9 @@
 <?php
-require './admin/koneksi.php'; 
+require './admin/koneksi.php';
 $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
 ?>
 
 <?php include 'layout/header.php'; ?>
-<link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
 <title>Publikasi</title>
 </head>
 
@@ -24,7 +23,7 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
                     <?php if ($row["jenis_file"] == "foto") { ?>
                         <!-- Foto -->
                         <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <a href="">
+                            <a class="">
                                 <button class="">
                                     <img class="object-cover w-screen h-52  md:h-64 object-top" src="public/publikasi/<?php echo $row["nama_file"]; ?>">
                                     <p class=" pl-2 mt-1 py-2 text-base font-semibold text-justify"><?php echo $row["judul"]; ?></p>
@@ -34,7 +33,7 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
                     <?php } elseif ($row["jenis_file"] == "video") { ?>
                         <!-- video -->
                         <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <a href="">
+                            <a>
                                 <button class="">
                                     <video class="w-full h-auto" controls>
                                         <source src="public/publikasi/<?php echo $row["nama_file"] ?>#t=0.1" type="video/mp4">
@@ -50,6 +49,5 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
         </div>
 
     </div>
-    <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
     <!--Footer -->
     <?php include 'layout/footer.php'; ?>

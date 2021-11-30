@@ -29,9 +29,8 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay="autoplay" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                        <source src="/images/video.mp4" type="video/mp4" class="" />
-                        Your browser does not support the video tag.
+                    <video autoplay="autoplay" muted class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                        <source src="/images/video.mp4" type="video/mp4"/>
                     </video>
                     <!-- <div class="-mt-94 px-6 sm:pl-10 relative z-30">
                         <div class="px-8 w-full">
