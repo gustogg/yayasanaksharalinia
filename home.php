@@ -162,27 +162,27 @@
         </div>
     </div>
     <!-- Publikasi -->
-    <div class="bg-gray-100 px-8 lg:px-16 pb-8">
+    <div class="bg-gray-100 px-4 lg:px-24 pb-8">
         <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-4 lg:my-12">
             <!-- Publikasi Div -->
-            <div class="grid col-span-1 p-6">
-                <a href="#">
-                    <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                        <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+            <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
+                <a href="">
+                    <button class="">
+                        <div class="col-span-1">
                             <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb1.jpg">
-                            <p class=" pl-2 mt-1 py-2 text-base font-semibold text-justify">Kepala Sekolah SD Negeri 7 Gianyar, Bpk.I Gusti Ngurah Mideh S. Pd sedang berbincang kepada Penasihat Akshara Linia Indonesia, “ Sri Dharen S.H., M.B.A,” mengucapkan terima kasih telah memperhatikan kebutuhan sekolah kami di Manukaya, Kabupaten Gianyar.</p>
+                            <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify">Kepala Sekolah SD Negeri 7 Gianyar, Bpk.I Gusti Ngurah Mideh S. Pd sedang berbincang kepada Penasihat Akshara Linia Indonesia, “ Sri Dharen S.H., M.B.A,” mengucapkan terima kasih telah memperhatikan kebutuhan sekolah kami di Manukaya, Kabupaten Gianyar.</p>
                         </div>
                     </button>
                 </a>
             </div>
             <!-- Publikasi Div -->
-            <div class="grid col-span-1 p-6">
-                <a href="#">
-                    <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
-                        <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+            <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
+                <a href="">
+                    <button class="">
+                        <div class="col-span-1 p-3 ">
                             <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
-                            <p class=" pl-2 mt-1 py-2 text-base font-semibold text-justify">Photo Bersama para guru di sekolah SD Negeri 7 Manukaya Gianyar, didampingi oleh Pak I Ketut Arinata Yasa, Tampak Siring.</p>
+                            <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify">Photo Bersama para guru di sekolah SD Negeri 7 Manukaya Gianyar, didampingi oleh Pak I Ketut Arinata Yasa, Tampak Siring.</p>
                         </div>
                     </button>
                 </a>
