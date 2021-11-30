@@ -11,7 +11,7 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
 <body class="overflow-x-hidden">
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16">
-        <div class="">
+        <div class="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
             <img class="object-cover w-full h-96 relative z-10 " src="public/publikasi/pb2.jpg" alt="image" />
             <div class="bg-black -mt-24 relative z-20 w-60 md:w-96 mb-4 mx-auto rounded-md bg-opacity-60">
                 <p class="p-3 font-semibold text-base md:text-lg text-white text-center">Publikasi</p>
@@ -23,7 +23,7 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
                 <?php foreach ($publikasi as $row) : ?>
                     <?php if ($row["jenis_file"] == "foto") { ?>
                         <!-- Foto -->
-                        <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer">
+                        <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                             <a href="">
                                 <button class="">
                                     <img class="object-cover w-screen h-52  md:h-64 object-top" src="public/publikasi/<?php echo $row["nama_file"]; ?>">
@@ -33,7 +33,7 @@ $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC");
                         </div>
                     <?php } elseif ($row["jenis_file"] == "video") { ?>
                         <!-- video -->
-                        <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer">
+                        <div class="grid col-span-1 p-6 hover:border-red-500 border-2 border-gray-100 bg-white shadow-md rounded-md cursor-pointer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                             <a href="">
                                 <button class="">
                                     <video class="w-full h-auto" controls>

@@ -1,4 +1,4 @@
-<div class="fixed w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 z-50 shadow-md">
+<div class="fixed w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 z-50 shadow-md" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">
   <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div class="p-3 flex flex-row items-center justify-between">
     <a href="index.php">

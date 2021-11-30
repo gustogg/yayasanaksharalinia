@@ -29,7 +29,7 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay="autoplay" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10">
+                    <video autoplay="autoplay" id="myVideo" class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                         <source src="/images/video.mp4" type="video/mp4" class="" />
                         Your browser does not support the video tag.
                     </video>
@@ -42,7 +42,7 @@
                         </div>
                     </div> -->
                     <div class="relative z-20 -mt-96 px-6 sm:pl-10  ">
-                        <div class="px-8 w-max pb-2 mx-auto">
+                        <div class="px-8 w-max pb-2 mx-auto" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                             <div class="py-3 px-3 text-center md:py-4 md:px-4 bg-black bg-opacity-80 rounded-lg w-52 md:w-max justify-center">
                                 <p class="text-sm md:text-xl text-white font-bold"> Selamat Datang di <strong>Yayasan Akshara Linia Indonesia </strong></p>
                             </div>
@@ -57,7 +57,7 @@
                                 <p class="text-xs md:text-base text-white font-normal"> LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL LOREM IPSUM DOL SIAMET LOREM IPSUM DOL SIAMET LOREM IPSUM DOL </p>
                             </div>
                         </div> -->
-                        <div class="w-max mx-auto">
+                        <div class="w-max mx-auto" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                             <a href="/publikasi.php" class="">
                                 <button class="mt-3 py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-base font-bold rounded-md">
                                     Info Selengkapnya >
@@ -115,15 +115,16 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next" style="color:red"></div>
-        <div class="swiper-button-prev" style="color:red"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" style="color:red"></div>
+        <div class="swiper-button-prev" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" style="color:red"></div>
+        <div class="swiper-pagination" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"></div>
     </div>
 
     <!-- Tempat kotak -->
     <div class="bg-white mt-8 p-3 md:px-28">
         <!-- Tentang Kami -->
-        <div class="block md:hidden p-4 pt-6 bg-gray-50 filter shadow-lg">
+        <!-- mobile -->
+        <div class="block md:hidden p-4 pt-6 bg-gray-50 filter shadow-lg" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <div class="mb-4">
                 <p class="text-center text-base font-bold text-red-600">Tentang Kami</p>
             </div>
@@ -139,7 +140,8 @@
                 </button>
             </div>
         </div>
-        <div class="-mt-11 md:mt-0 mb-10 p-8 bg-gray-100 invisible md:visible grid grid-cols-3 filter shadow-lg ">
+        <!-- desktop -->
+        <div class="-mt-11 md:mt-0 mb-10 p-8 bg-gray-100 invisible md:visible grid grid-cols-3 filter shadow-lg" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <div class="col-span-2 px-8 my-auto hidden md:block ">
                 <p class="text-lg mb-2 font-bold text-red-600">Tentang Kami</p>
                 <p class="text-base text-justify"><strong>Yayasan Akshara Linia Indonesia</strong> adalah Yayasan yang bergerak dibidang sosial, bidang kemanusiaan dengan akta Notaris Amaliyah, SH., M.KN., Nomor 13 tanggal 09 Maret 2021 dan Keputusan Mentri Hukum Dan Hak Asasi Manusia Republik Indonesia, Nomor AHU-0010105.AH.01.12 Tahun 2021 tanggal 17 Maret 2021 serta Nomor Induk Berusaha (NIB) 1238000301296 tanggal 19 Maret 2021.</p>
@@ -154,7 +156,7 @@
             </div>
         </div>
         <!-- Coming Soon -->
-        <div class="my-6 p-4 bg-gray-100 shadow-md">
+        <div class="my-6 p-4 bg-gray-100 shadow-md" data-aos="fade-right" data-aos-delay="" data-aos-duration="700">
             <div class="">
                 <p class="text-center text-base font-bold text-red-600 py-2">Informasi</p>
                 <p class="text-center text-sm font-semibold text-black py-12">To be announced</p>
@@ -162,7 +164,7 @@
         </div>
     </div>
     <!-- Publikasi -->
-    <div class="bg-gray-100 px-4 lg:px-24 pb-8">
+    <div class="bg-gray-100 px-4 lg:px-24 pb-8" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
         <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-4 lg:my-12">
             <!-- Publikasi Div -->
@@ -212,6 +214,10 @@
             mousewheel: true,
             keyboard: true,
         });
+    </script>
+    <!-- AOS -->
+    <script>
+        AOS.init();
     </script>
     <!--Footer -->
     <?php include 'layout/footer.php'; ?>
