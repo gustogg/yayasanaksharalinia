@@ -29,7 +29,7 @@
             <!-- Slider 1 -->
             <div class="swiper-slide">
                 <div class="">
-                    <video autoplay="autoplay" muted class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                    <video autoplay="autoplay" class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                         <source src="/images/video.mp4" type="video/mp4"/>
                     </video>
                     <!-- <div class="-mt-94 px-6 sm:pl-10 relative z-30">
@@ -168,7 +168,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-4 lg:my-12">
             <!-- Publikasi Div -->
             <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
-                <a href="">
+                <a>
                     <button class="">
                         <div class="col-span-1">
                             <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb1.jpg">
@@ -179,7 +179,7 @@
             </div>
             <!-- Publikasi Div -->
             <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
-                <a href="">
+                <a>
                     <button class="">
                         <div class="col-span-1 p-3 ">
                             <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
