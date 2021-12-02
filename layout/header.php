@@ -11,3 +11,6 @@
     <link rel="logo icon" type="png" href="/images/logo.png"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    

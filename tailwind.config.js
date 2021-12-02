@@ -5,6 +5,12 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      fontFamily: {
+         'poppins': ['Poppins'],
+         'montserrat' : ['Montserrat'],
+      }
+   },
     screens: {
       sm: '640px',
       md: '768px',

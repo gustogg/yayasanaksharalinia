@@ -23650,6 +23650,14 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-poppins {
+  font-family: Poppins;
+}
+
+.font-montserrat {
+  font-family: Montserrat;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -56504,6 +56512,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-poppins {
+    font-family: Poppins;
+  }
+
+  .sm\:font-montserrat {
+    font-family: Montserrat;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -89004,6 +89020,14 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-poppins {
+    font-family: Poppins;
+  }
+
+  .md\:font-montserrat {
+    font-family: Montserrat;
   }
 
   .md\:text-xs {
@@ -121508,6 +121532,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-poppins {
+    font-family: Poppins;
+  }
+
+  .lg\:font-montserrat {
+    font-family: Montserrat;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -154010,6 +154042,14 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-poppins {
+    font-family: Poppins;
+  }
+
+  .xl\:font-montserrat {
+    font-family: Montserrat;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -186510,6 +186550,14 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-poppins {
+    font-family: Poppins;
+  }
+
+  .\32xl\:font-montserrat {
+    font-family: Montserrat;
   }
 
   .\32xl\:text-xs {
