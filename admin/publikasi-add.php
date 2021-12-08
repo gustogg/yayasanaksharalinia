@@ -17,7 +17,6 @@ if (!isset($_SESSION["login"])) {
     <!-- Navbar & Sidebar -->
     <?php include '../admin/layout/navsidebar.php'; ?>
 
-
     <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
         <main class="w-full flex-grow p-6">
             <h1 class="w-full text-3xl text-black pb-6">Publikasi</h1>

@@ -1,4 +1,7 @@
-<?php include 'layout/header.php'; ?>
+<?php
+require './admin/koneksi.php';
+include 'layout/header.php';
+?>
 <title>Home</title>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <style>
@@ -30,7 +33,7 @@
             <div class="swiper-slide">
                 <div class="">
                     <video autoplay="autoplay" class="myVideo object-cover object-top h-99 w-full relative z-10" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                        <source src="/images/video.mp4" type="video/mp4"/>
+                        <source src="/images/video.mp4" type="video/mp4" />
                     </video>
                     <!-- <div class="-mt-94 px-6 sm:pl-10 relative z-30">
                         <div class="px-8 w-full">
@@ -163,31 +166,39 @@
         </div>
     </div>
     <!-- Publikasi -->
+    <?php
+    $publikasi = query("SELECT * FROM publikasi ORDER BY id DESC LIMIT 2");
+    ?>
     <div class="bg-gray-100 px-4 lg:px-24 pb-8" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
         <p class="text-red-600 text-center font-bold pt-8">Publikasi</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-4 lg:my-12">
             <!-- Publikasi Div -->
-            <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
-                <a>
-                    <button class="">
-                        <div class="col-span-1">
-                            <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb1.jpg">
-                            <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify">Kepala Sekolah SD Negeri 7 Gianyar, Bpk.I Gusti Ngurah Mideh S. Pd sedang berbincang kepada Penasihat Akshara Linia Indonesia, “ Sri Dharen S.H., M.B.A,” mengucapkan terima kasih telah memperhatikan kebutuhan sekolah kami di Manukaya, Kabupaten Gianyar.</p>
-                        </div>
-                    </button>
-                </a>
-            </div>
-            <!-- Publikasi Div -->
-            <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
-                <a>
-                    <button class="">
-                        <div class="col-span-1 p-3 ">
-                            <img class="object-cover w-screen h-52 object-top" src="public/publikasi/pb2.jpg">
-                            <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify">Photo Bersama para guru di sekolah SD Negeri 7 Manukaya Gianyar, didampingi oleh Pak I Ketut Arinata Yasa, Tampak Siring.</p>
-                        </div>
-                    </button>
-                </a>
-            </div>
+            <?php foreach ($publikasi as $row) : ?>
+                <div class="grid col-span-1 p-4 lg:p-6 bg-white shadow-md rounded-md border-gray-100 hover:border-red-500 border-2 cursor-pointer">
+                    <?php if ($row["jenis_file"] == "foto") { ?>
+                        <a>
+                            <button class="">
+                                <div class="col-span-1">
+                                    <img class="object-cover w-screen h-36 sm:h-44 md:h-44 lg:h-48 xl:h-80 object-top" src="public/publikasi/<?php echo $row["nama_file"]; ?>">
+                                    <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify"><?php echo $row["judul"]; ?></p>
+                                </div>
+                            </button>
+                        </a>
+                    <?php } else { ?>
+                        <a>
+                            <button class="">
+                                <div class="col-span-1">
+                                    <video class="w-full h-auto" controls>
+                                        <source src="public/publikasi/<?php echo $row["nama_file"] ?>#t=0.1" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p class=" pl-2 mt-1 py-2 text-sm md:text-base font-semibold text-justify"><?php echo $row["judul"]; ?></p>
+                                </div>
+                            </button>
+                        </a>
+                    <?php } ?>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class=" ">
             <a href="/publikasi.php">

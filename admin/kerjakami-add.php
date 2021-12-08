@@ -46,40 +46,89 @@ $kategoriadd = $_GET["kategoriadd"];
                                 <label class="block text-sm text-gray-600" for="sub_kegiatan1">Sub kegiatan 1</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan1" type="text" required="" placeholder="Sub Kegiatan 1" aria-label="Name">
                             </div>
-                            <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto1">Pilih Foto untuk sub 1 (Before)</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto1" id="nama_foto1">
-                            </div>
-                            <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto2">Pilih untuk sub 1 Foto (After)</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto2" id="nama_foto2">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="col-span-1">
+                                    <?php for ($i = 1; $i <= 4; $i++) { ?>
+                                        <div class="mt-2">
+                                            <label class="block text-sm text-gray-600" for="before_foto<?php echo $i ?>">Pilih Foto (Before <?php echo $i ?>)</label>
+                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="before_foto<?php echo $i ?>" id="before_foto<?php echo $i ?>">
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                                <div class="col-span-1">
+                                    <?php for ($i = 1; $i <= 4; $i++) { ?>
+                                        <div class="mt-2">
+                                            <label class="block text-sm text-gray-600" for="after_foto<?php echo $i ?>">Pilih Foto (After <?php echo $i ?>)</label>
+                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="after_foto<?php echo $i ?>" id="after_foto<?php echo $i ?>">
+                                        </div>
+                                    <?php } ?>
+                                </div>
                             </div>
                             <!-- sub 2 -->
                             <div class="mt-2">
                                 <label class="block text-sm text-gray-600" for="sub_kegiatan2">Sub kegiatan 2</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan2" type="text" placeholder="Sub Kegiatan 2" aria-label="Name">
                             </div>
-                            <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto3">Pilih Foto</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto3" id="nama_foto3">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto3">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto3" id="nama_foto3">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto4">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto4" id="nama_foto4">
+                                </div>
                             </div>
-                            <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto4">Pilih Foto</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto4" id="nama_foto4">
-                            </div>
+
                             <!-- sub 3 -->
                             <div class="mt-2">
                                 <label class="block text-sm text-gray-600" for="sub_kegiatan3">Sub kegiatan 3</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan3" type="text" placeholder="Sub Kegiatan 2" aria-label="Name">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan3" type="text" placeholder="Sub Kegiatan 3" aria-label="Name">
                             </div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto5">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto5" id="nama_foto5">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto6">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto6" id="nama_foto6">
+                                </div>
+                            </div>
+
+                            <!-- sub 4 -->
                             <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto5">Pilih Foto</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto5" id="nama_foto5">
+                                <label class="block text-sm text-gray-600" for="sub_kegiatan4">Sub kegiatan 4</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan4" type="text" placeholder="Sub Kegiatan 4" aria-label="Name">
                             </div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto13">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto13" id="nama_foto13">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto14">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto14" id="nama_foto14">
+                                </div>
+                            </div>
+
+                            <!-- sub 5 -->
                             <div class="mt-2">
-                                <label class="block text-sm text-gray-600" for="nama_foto6">Pilih Foto</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto6" id="nama_foto6">
+                                <label class="block text-sm text-gray-600" for="sub_kegiatan5">Sub kegiatan 5</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="sub_kegiatan5" type="text" placeholder="Sub Kegiatan 5" aria-label="Name">
                             </div>
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto15">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto15" id="nama_foto15">
+                                </div>
+                                <div class="mt-2">
+                                    <label class="block text-sm text-gray-600" for="nama_foto16">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto16" id="nama_foto16">
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
                             <div class="mt-6 flex flex-row">
                                 <div class="">
                                     <button class="px-4 py-1 text-white font-light tracking-wider bg-red-500 hover:bg-red-600 rounded" type="submit">Submit</button>

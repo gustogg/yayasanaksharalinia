@@ -36,7 +36,7 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'tk' ORDER BY id DE
                                     <?php } else if ($row["nama_foto3"] != NULL) { ?>
                                         <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto3"]; ?>">
                                     <?php } else { ?>
-                                        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto1"]; ?>">
+                                        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["before_foto1"]; ?>">
                                     <?php } ?>
                                     <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold"><?php echo $row["lokasi_kegiatan"]; ?></p>
                                     <div class="mr-auto w-48  py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-sm font-bold rounded-md">
