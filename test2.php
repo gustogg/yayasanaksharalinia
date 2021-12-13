@@ -11,14 +11,19 @@
 </head>
 
 <body>
-<?php 
+    <?php
 
-$i=0;
-$a[$i]=1;
-echo $i;
-echo $a[0];
 
-?>
+
+    ?>
+    <!-- backup search -->
+    <?php if ($row["nama_foto5"] != NULL) { ?>
+        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto5"]; ?>" alt="image">
+    <?php } else if ($row["nama_foto3"] != NULL) { ?>
+        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto3"]; ?>" alt="image">
+    <?php } else { ?>
+        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["before_foto1"]; ?>" alt="image">
+    <?php } ?>
 </body>
 
 </html>

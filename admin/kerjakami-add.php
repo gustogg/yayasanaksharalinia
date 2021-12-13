@@ -50,16 +50,16 @@ $kategoriadd = $_GET["kategoriadd"];
                                 <div class="col-span-1">
                                     <?php for ($i = 1; $i <= 4; $i++) { ?>
                                         <div class="mt-2">
-                                            <label class="block text-sm text-gray-600" for="before_foto<?php echo $i ?>">Pilih Foto (Before <?php echo $i ?>)</label>
-                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="before_foto<?php echo $i ?>" id="before_foto<?php echo $i ?>">
+                                            <label class="block text-sm text-gray-600" for="before_foto<?php echo $i ?>">Pilih Foto (Before <?php echo $i; ?>)</label>
+                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="before_foto<?php echo $i ;?>" id="before_foto<?php echo $i; ?>">
                                         </div>
                                     <?php } ?>
                                 </div>
                                 <div class="col-span-1">
-                                    <?php for ($i = 1; $i <= 4; $i++) { ?>
+                                    <?php for ($j = 1; $j <= 4; $j++) { ?>
                                         <div class="mt-2">
-                                            <label class="block text-sm text-gray-600" for="after_foto<?php echo $i ?>">Pilih Foto (After <?php echo $i ?>)</label>
-                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="after_foto<?php echo $i ?>" id="after_foto<?php echo $i ?>">
+                                            <label class="block text-sm text-gray-600" for="after_foto<?php echo $i ?>">Pilih Foto (After <?php echo $j; ?>)</label>
+                                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="after_foto<?php echo $j; ?>" id="after_foto<?php echo $i; ?>">
                                         </div>
                                     <?php } ?>
                                 </div>
@@ -103,12 +103,12 @@ $kategoriadd = $_GET["kategoriadd"];
                             </div>
                             <div class="grid grid-cols-2 gap-5">
                                 <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="nama_foto13">Pilih Foto</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto13" id="nama_foto13">
+                                    <label class="block text-sm text-gray-600" for="nama_foto7">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto7" id="nama_foto7">
                                 </div>
                                 <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="nama_foto14">Pilih Foto</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto14" id="nama_foto14">
+                                    <label class="block text-sm text-gray-600" for="nama_foto8">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto8" id="nama_foto8">
                                 </div>
                             </div>
 
@@ -119,12 +119,12 @@ $kategoriadd = $_GET["kategoriadd"];
                             </div>
                             <div class="grid grid-cols-2 gap-5">
                                 <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="nama_foto15">Pilih Foto</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto15" id="nama_foto15">
+                                    <label class="block text-sm text-gray-600" for="nama_foto9">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto9" id="nama_foto9">
                                 </div>
                                 <div class="mt-2">
-                                    <label class="block text-sm text-gray-600" for="nama_foto16">Pilih Foto</label>
-                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto16" id="nama_foto16">
+                                    <label class="block text-sm text-gray-600" for="nama_foto10">Pilih Foto</label>
+                                    <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" type="file" name="nama_foto10" id="nama_foto10">
                                 </div>
                             </div>
 

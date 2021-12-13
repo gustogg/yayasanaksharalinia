@@ -55,10 +55,10 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'tk'");
                                     <td class="text-left py-3 px-4"><a class="hover:text-blue-500"><?= $i; ?></a></td>
                                     <td class="w-3/12  text-left py-3 px-4"><?= $row["lokasi_kegiatan"]; ?></td>
                                     <td class="w-4/12text-left py-3 px-4">
-                                        <img src="/public/<?php echo $row["kategori"];?>/<?= $row["nama_foto1"]; ?>">
+                                        <img src="/public/<?php echo $row["kategori"];?>/<?= $row["before_foto1"]; ?>">
                                     </td>
                                     <td class="w-4/12text-left py-3 px-4">
-                                        <img src="/public/<?php echo $row["kategori"];?>/<?= $row["nama_foto2"]; ?>">
+                                        <img src="/public/<?php echo $row["kategori"];?>/<?= $row["after_foto1"]; ?>">
                                     </td>
                                     <td class="w-3/12 text-left">
                                         <a href="../kerjakami-detail.php?id=<?php echo $row["id"]; ?>" target="_blank" class="flex flex-row bg-green-200 text-green-800 hover:bg-green-400 hover:text-green-900 rounded-lg px-6 py-3 w-max">
