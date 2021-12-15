@@ -77,7 +77,7 @@ if ($before_foto1 != "") {
     // Foto After (sub kegiatan 1)
     $x2 = explode('.', $after_foto1);
     $ekstensi2 = strtolower(end($x2));
-    $file_tmp2 = $_FILES['after_foto2']['tmp_name'];
+    $file_tmp2 = $_FILES['after_foto1']['tmp_name'];
     if ($after_foto1 != NULL) {
         $after_foto_baru1 = $angka_acak . '-' . $after_foto1;
     } else {
