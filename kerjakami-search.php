@@ -45,16 +45,18 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE lokasi_kegiatan like '%" . $se
                             <a href="/kerjakami-detail.php?id=<?php echo $row["id"]; ?>" name="<?php $row["id"]; ?>">
                                 <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                                     <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                                        <?php $i = 10; ?>
+                                        <?php $i = 12; ?>
                                         <?php while ($i > 0) { ?>
-                                            <?php if ($i >= 3) { ?>
-                                                <?php if ($row["nama_foto$i"] !== NULL) { ?>
+                                            <?php if ($i > 4) { ?>
+                                                <?php $j = $i - 2; ?>
+                                                <?php if ($row["nama_foto$j"] !== NULL) { ?>
                                                     <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto$i"]; ?>" alt="image">
                                                     <?php $i = 0; ?>
                                                 <?php } ?>
                                             <?php } else { ?>
                                                 <?php if ($row["before_foto$i"] != NULL) { ?>
                                                     <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["before_foto$i"]; ?>" alt="image">
+                                                    <?php $i = 0; ?>
                                                 <?php } ?>
                                             <?php } ?>
                                             <?php $i--; ?>

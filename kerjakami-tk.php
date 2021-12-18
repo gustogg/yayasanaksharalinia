@@ -31,12 +31,21 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'tk' ORDER BY id DE
                         <a href="/kerjakami-detail.php?id=<?php echo $row["id"]; ?>" name="<?php $row["id"]; ?>">
                             <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                                 <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
-                                    <?php if ($row["nama_foto5"] != NULL) { ?>
-                                        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto5"]; ?>">
-                                    <?php } else if ($row["nama_foto3"] != NULL) { ?>
-                                        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto3"]; ?>">
-                                    <?php } else { ?>
-                                        <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["before_foto1"]; ?>">
+                                    <?php $i = 12; ?>
+                                    <?php while ($i > 0) { ?>
+                                        <?php if ($i > 4) { ?>
+                                            <?php $j = $i-2;?>
+                                            <?php if ($row["nama_foto$j"] !== NULL) { ?>
+                                                <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto$j"]; ?>" alt="image">
+                                                <?php $i = 0; ?>
+                                            <?php } ?>
+                                        <?php } else { ?>
+                                            <?php if ($row["before_foto$i"] != NULL) { ?>
+                                                <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["before_foto$i"]; ?>" alt="image">
+                                                <?php $i = 0; ?>
+                                            <?php } ?>
+                                        <?php } ?>
+                                        <?php $i--; ?>
                                     <?php } ?>
                                     <p class=" pl-2 mt-1 py-2 text-base text-left font-semibold"><?php echo $row["lokasi_kegiatan"]; ?></p>
                                     <div class="mr-auto w-48  py-2 px-4 bg-red-500 hover:bg-red-700 text-white text-xs md:text-sm lg:text-sm font-bold rounded-md">

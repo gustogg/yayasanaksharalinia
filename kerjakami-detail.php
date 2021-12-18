@@ -14,22 +14,31 @@ $data = mysqli_fetch_assoc($hasil);
     <?php include 'layout/navbar.php' ?>
     <div class="pt-16 w-full md:w-11/12 lg:w-4/5 mx-auto">
         <div class="" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-            
-
-            <?php $i = 10; ?>
+            <?php $i = 12; ?>
             <?php while ($i > 0) { ?>
-                <?php if ($i >= 3) { ?>
-                    <?php if ($data["nama_foto$i"] !== NULL) { ?>
-                        <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto$i"]; ?>" alt="image">
+                <?php if ($i > 4) { ?>
+                    <?php $j = $i - 2; ?>
+                    <?php if ($data["nama_foto$j"] === NULL) { ?>
+
+                    <?php } else if ($data["nama_foto$j" === 'NULL']) { ?>
+
+                    <?php } else { ?>
+                        <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto$j"]; ?>" alt="image">
                         <?php $i = 0; ?>
                     <?php } ?>
                 <?php } else { ?>
-                    <?php if ($data["before_foto$i"] != NULL) { ?>
-                        <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["before_foto$i"]; ?>" alt="image">
+                    <?php if ($data["before_foto$i"] === NULL) { ?>
+
+                    <?php } else if ($data["before_foto$i" === 'NULL']) { ?>
+
+                    <?php } else { ?>
+                        <img class="object-cover h-96 w-full filter brightness-75 relative z-10 object-top" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["before_foto$j"]; ?>" alt="image">
+                        <?php $i = 0; ?>
                     <?php } ?>
                 <?php } ?>
                 <?php $i--; ?>
             <?php } ?>
+
 
         </div>
         <div class="pt-10 px-8 bg-gray-100 pb-14">
@@ -40,7 +49,11 @@ $data = mysqli_fetch_assoc($hasil);
                 <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <p class="text-sm md:text-lg">Before</p>
                     <?php for ($i = 1; $i <= 4; $i++) { ?>
-                        <?php if ($data["before_foto$i"] != NULL) { ?>
+                        <?php if ($data["before_foto$i"] === 'NULL') { ?>
+
+                        <?php } else if ($data["before_foto$i"] === NULL) { ?>
+
+                        <?php } else { ?>
                             <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                                 <div class="mt-2 flex w-full h-80">
                                     <div class="pr-0 md:pr-4 h-full w-full">
@@ -141,6 +154,78 @@ $data = mysqli_fetch_assoc($hasil);
                                         <img class="h-full w-full filter brightness-75 blur-sm relative z-10" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto6"]; ?>">
                                         <div class="h-full w-full mt-1">
                                             <img class="h-full w-full -mt-80 object-contain object-center relative z-20" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto6"]; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+            <!-- Next Bawahnya -->
+            <?php if ($data["sub_kegiatan4"] != NULL) { ?>
+                <p class="pt-8 text-sm md:text-lg font-semibold mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><?php echo $data["sub_kegiatan4"]; ?></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <!-- Pembagi Kolom -->
+                    <?php if ($data["nama_foto7"] != NULL) { ?>
+                        <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="flex w-full h-80">
+                                <div class="pr-0 md:pr-4 h-full w-full">
+                                    <div class="border-2 h-full border-gray-300 hover:border-red-500">
+                                        <img class="h-full w-full filter brightness-75 blur-sm relative z-10" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto7"]; ?>">
+                                        <div class="h-full w-full mt-1">
+                                            <img class="h-full w-full -mt-80 object-contain object-center relative z-20" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto7"]; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <!-- Pembagi Kolom -->
+                    <?php if ($data["nama_foto8"] != 'NULL' || $data["nama_foto8"] != NULL) { ?>
+                        <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="flex w-full h-80">
+                                <div class="pr-0 md:pr-4 h-full w-full">
+                                    <div class="border-2 h-full border-gray-300 hover:border-red-500">
+                                        <img class="h-full w-full filter brightness-75 blur-sm relative z-10" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto8"]; ?>">
+                                        <div class="h-full w-full mt-1">
+                                            <img class="h-full w-full -mt-80 object-contain object-center relative z-20" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto8"]; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+            <!-- Next Bawahnya -->
+            <?php if ($data["sub_kegiatan5"] != NULL) { ?>
+                <p class="pt-8 text-sm md:text-lg font-semibold mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><?php echo $data["sub_kegiatan5"]; ?></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <!-- Pembagi Kolom -->
+                    <?php if ($data["nama_foto9"] != 'NULL' || $data["nama_foto9"] != NULL) { ?>
+                        <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="flex w-full h-80">
+                                <div class="pr-0 md:pr-4 h-full w-full">
+                                    <div class="border-2 h-full border-gray-300 hover:border-red-500">
+                                        <img class="h-full w-full filter brightness-75 blur-sm relative z-10" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto9"]; ?>">
+                                        <div class="h-full w-full mt-1">
+                                            <img class="h-full w-full -mt-80 object-contain object-center relative z-20" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto9"]; ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                    <!-- Pembagi Kolom -->
+                    <?php if ($data["nama_foto10"] != 'NULL' || $data["nama_foto10"] != NULL) { ?>
+                        <div class="col-span-1" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <div class="flex w-full h-80">
+                                <div class="pr-0 md:pr-4 h-full w-full">
+                                    <div class="border-2 h-full border-gray-300 hover:border-red-500">
+                                        <img class="h-full w-full filter brightness-75 blur-sm relative z-10" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto10"]; ?>">
+                                        <div class="h-full w-full mt-1">
+                                            <img class="h-full w-full -mt-80 object-contain object-center relative z-20" src="public/<?php echo $data["kategori"] ?>/<?php echo $data["nama_foto10"]; ?>">
                                         </div>
                                     </div>
                                 </div>

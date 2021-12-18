@@ -52,7 +52,7 @@ if ($before_foto1 != "") {
     if ($before_foto2 != NULL) {
         $before_foto_baru2 = $angka_acak . '-' . $before_foto2;
     } else {
-        $before_foto_baru2 = NULL;
+        $before_foto_baru2 = "NULL";
     }
 
     $x8 = explode('.', $before_foto3);
@@ -61,7 +61,7 @@ if ($before_foto1 != "") {
     if ($before_foto3 != NULL) {
         $before_foto_baru3 = $angka_acak . '-' . $before_foto3;
     } else {
-        $before_foto_baru3 = NULL;
+        $before_foto_baru3 = "NULL";
     }
 
     $x9 = explode('.', $before_foto4);
@@ -70,7 +70,7 @@ if ($before_foto1 != "") {
     if ($before_foto4 != NULL) {
         $before_foto_baru4 = $angka_acak . '-' . $before_foto4;
     } else {
-        $before_foto_baru4 = NULL;
+        $before_foto_baru4 = "NULL";
     }
 
 
@@ -81,7 +81,7 @@ if ($before_foto1 != "") {
     if ($after_foto1 != NULL) {
         $after_foto_baru1 = $angka_acak . '-' . $after_foto1;
     } else {
-        $after_foto_baru1 = NULL;
+        $after_foto_baru1 = "NULL";
     }
 
     $x10 = explode('.', $after_foto2);
@@ -90,7 +90,7 @@ if ($before_foto1 != "") {
     if ($after_foto2 != NULL) {
         $after_foto_baru2 = $angka_acak . '-' . $after_foto2;
     } else {
-        $after_foto_baru2 = NULL;
+        $after_foto_baru2 = "NULL";
     }
 
     $x11 = explode('.', $after_foto3);
@@ -99,7 +99,7 @@ if ($before_foto1 != "") {
     if ($after_foto3 != NULL) {
         $after_foto_baru3 = $angka_acak . '-' . $after_foto3;
     } else {
-        $after_foto_baru3 = NULL;
+        $after_foto_baru3 = "NULL";
     }
 
     $x12 = explode('.', $after_foto4);
@@ -108,7 +108,7 @@ if ($before_foto1 != "") {
     if ($after_foto4 != NULL) {
         $after_foto_baru4 = $angka_acak . '-' . $after_foto4;
     } else {
-        $after_foto_baru4 = NULL;
+        $after_foto_baru4 = "NULL";
     }
 
     // Foto 3 - 4 (sub kegiatan 2)
@@ -118,7 +118,7 @@ if ($before_foto1 != "") {
     if ($nama_foto3 != NULL) {
         $nama_foto_baru3 = $angka_acak . '-' . $nama_foto3;
     } else {
-        $nama_foto_baru3 = NULL;
+        $nama_foto_baru3 = "NULL";
     }
 
     $x4 = explode('.', $nama_foto4);
@@ -127,7 +127,7 @@ if ($before_foto1 != "") {
     if ($nama_foto4 != NULL) {
         $nama_foto_baru4 = $angka_acak . '-' . $nama_foto4;
     } else {
-        $nama_foto_baru4 = NULL;
+        $nama_foto_baru4 = "NULL";
     }
 
     // Foto 5 - 6 (sub kegiatan 3)
@@ -137,7 +137,7 @@ if ($before_foto1 != "") {
     if ($nama_foto5 != NULL) {
         $nama_foto_baru5 = $angka_acak . '-' . $nama_foto5;
     } else {
-        $nama_foto_baru5 = NULL;
+        $nama_foto_baru5 = "NULL";
     }
 
     $x6 = explode('.', $nama_foto6);
@@ -146,7 +146,7 @@ if ($before_foto1 != "") {
     if ($nama_foto6 != NULL) {
         $nama_foto_baru6 = $angka_acak . '-' . $nama_foto6;
     } else {
-        $nama_foto_baru6 = NULL;
+        $nama_foto_baru6 = "NULL";
     }
 
     // Foto 7 - 8 (sub kegiatan 4)
@@ -156,7 +156,7 @@ if ($before_foto1 != "") {
     if ($nama_foto7 != NULL) {
         $nama_foto_baru7 = $angka_acak . '-' . $nama_foto7;
     } else {
-        $nama_foto_baru7 = NULL;
+        $nama_foto_baru7 = "NULL";
     }
 
     $x14 = explode('.', $nama_foto8);
@@ -165,7 +165,7 @@ if ($before_foto1 != "") {
     if ($nama_foto8 != NULL) {
         $nama_foto_baru8 = $angka_acak . '-' . $nama_foto8;
     } else {
-        $nama_foto_baru8 = NULL;
+        $nama_foto_baru8 = "NULL";
     }
 
     // Foto 9 - 10 (sub kegiatan 5)
@@ -175,7 +175,7 @@ if ($before_foto1 != "") {
     if ($nama_foto9 != NULL) {
         $nama_foto_baru9 = $angka_acak . '-' . $nama_foto9;
     } else {
-        $nama_foto_baru9 = NULL;
+        $nama_foto_baru9 = "NULL";
     }
 
     $x16 = explode('.', $nama_foto10);
@@ -184,7 +184,7 @@ if ($before_foto1 != "") {
     if ($nama_foto10 != NULL) {
         $nama_foto_baru10 = $angka_acak . '-' . $nama_foto10;
     } else {
-        $nama_foto_baru10 = NULL;
+        $nama_foto_baru10 = "NULL";
     }
 
     // Pemindahan ke database dan folder
