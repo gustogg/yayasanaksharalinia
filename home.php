@@ -3,6 +3,8 @@ require './admin/koneksi.php';
 include 'layout/header.php';
 ?>
 <title>Home</title>
+<meta name="keywords" content="yayasan, akshara linia, yayasan akshara linia, yayasan bali, yayasan akshara linia">
+<meta name="description" content="Yayasan Akshara Linia Indonesia>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <style>
     .swiper-pagination-bullet-active {
