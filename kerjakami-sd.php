@@ -31,6 +31,7 @@ $kerjakami = query("SELECT * FROM kerjakami WHERE kategori = 'sd' ORDER BY id DE
                         <a href="/kerjakami-detail.php?id=<?php echo $row["id"]; ?>" name="<?php $row["id"]; ?>">
                             <button class="hover:border-red-500 border-2 rounded-md border-gray-100">
                                 <div class="col-span-1 p-3 bg-white shadow-md rounded-md">
+                                    
                                     <?php if ($row["nama_foto5"] != NULL) { ?>
                                         <img class="object-cover w-screen h-52 object-top" src="public/<?php echo $row["kategori"] ?>/<?php echo $row["nama_foto5"]; ?>" alt="image">
                                     <?php } else if ($row["nama_foto3"] != NULL) { ?>
